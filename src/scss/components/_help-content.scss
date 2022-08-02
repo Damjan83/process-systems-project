@@ -1,0 +1,77 @@
+.help-references, .help {
+    background-image: url('/src/assets/images/help-section/help-background.png');
+    padding-bottom: 45px;
+}
+
+.help-references {
+    margin-bottom: 45px;
+}
+
+.help__title {
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    padding: 43px 106px 0 77px;
+    position: relative;
+
+    &::before {
+        content: url('/src/assets/images/help-section/help-book-1-icon.svg');
+        margin-right: 18px;
+        position: absolute;
+        top: 43px;
+        left: 37px;
+    }
+
+    &--testimonials {
+        &::before {
+            content: url('/src/assets/images/content-pages/quotation-marks.svg');
+            top: 48px;
+            left: 35px;
+        }
+    }
+
+    &--premises {
+        &::before {
+            content: url('/src/assets/images/content-pages/house.png');
+            top: 48px;
+            left: 35px;
+        }
+    }
+
+    &--project {
+        &::before {
+            content: url('/src/assets/images/content-pages/folder.png');
+            top: 48px;
+            left: 35px;
+        }
+    }
+
+    &--warranty {
+        &::before {
+            content: url('/src/assets/images/content-pages/warranty.svg');
+            top: 48px;
+            left: 35px;
+        }
+    }
+
+    &--youtube {
+        &::before {
+            content: url('/src/assets/images/content-pages/youtube.svg');
+            top: 48px;
+            left: 35px;
+        }
+    }
+}
+
+.help__desc {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 28px 36px 31px 36px;
+}
+
+.info-content__img {
+    text-align: center;
+}
+
+

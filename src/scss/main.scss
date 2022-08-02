@@ -1,0 +1,90 @@
+//Base
+@import 'base/_config';
+@import 'base/_fonts';
+
+// Components
+@import 'components/_header';
+@import 'components/_nav';
+@import 'components/_button';
+@import 'components/_cart';
+@import 'components/_banner-list';
+@import 'components/_header-banner';
+@import 'components/_banner';
+@import 'components/_slide-item';
+@import 'components/_category';
+@import 'components/_category-list';
+@import 'components/_company-desc';
+@import 'components/_accordion-item';
+@import 'components/_help-content';
+@import 'components/_company-info';
+@import 'components/_footer';
+@import 'components/_list';
+// components category page
+@import 'components/_category-page-product-nav';
+@import 'components/_category-page-product';
+@import 'components/_category-page-subcategories';
+@import 'components/_filter';
+@import 'components/_artical';
+@import 'components/_pagination';
+@import 'components/_select';
+// components item page
+@import 'components/_form-contact';
+// component item cart
+@import 'components/_cart-page';
+@import 'components/_form';
+//component content pages
+@import 'components/_info-text';
+@import 'components/_video';
+//component blog page
+@import 'components/_info-content';
+@import 'components/_calendar';
+@import 'components/_blog';
+@import 'components/_social-network';
+@import 'components/_blog-category';
+@import 'components/_comment';
+//component reviews page
+@import 'components/_reviews';
+
+
+
+
+
+
+// layout
+@import 'layout/_wraper';
+@import 'layout/_section';
+
+
+
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  // ol, ul {
+  //   list-style: none;
+  // }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body {
+    font-family: 'Noto Sans' , sans-serif;
+    font-size: 16px;
+  }
+
+.main {
+  position: relative;
+}
+

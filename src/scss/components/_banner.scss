@@ -1,0 +1,103 @@
+.banner {
+    width: 100%;
+    min-height: 595px;
+    background-image: url('/src/assets/images/banner-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 23px;
+    position: relative;
+
+    &:before{
+        background-color: map-get($color , c-banner);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        mix-blend-mode: multiply;
+    }
+
+    &.banner__company {
+        &:before{
+          mix-blend-mode: hard-light;
+          background-color: map-get($color , c-banner-blue);
+      }
+  }
+}
+
+.banner__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 43px;
+    color: map-get($color , c-white);
+    text-transform: uppercase;
+    padding: 53px 35px 8px 35px;
+}
+
+.banner__desc {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    color: map-get($color , c-white);
+    padding: 0 52px 24px 35px;
+}
+
+.banner__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.banner__content--small {
+  text-align: center;
+}
+
+.banner--small {
+  width: 100%;
+  min-height: 351px;
+  background-image: url('/src/assets/images/banner-small.png');
+  margin-top: 72px;
+}
+
+.banner__content-title {
+  margin-top: 51px;
+    &::before {
+      content: url('/src/assets/images/delivery-truck-big.svg');
+    }
+}
+
+.content-title__small{
+  line-height: 33px;
+  color: map-get($color , c-white);
+  padding: 24px 80px;
+}
+
+.content-text__small{
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 23px;
+  color: map-get($color , c-white);
+  padding: 0 36px;
+}
+
+.banner__company {
+  min-height: 460px;
+  background-image: url('/src/assets/images/banner-blue.png');
+  margin-top: 64px;
+}
+
+
+.banner__content--info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.banner-list--info {
+  padding: 0;
+  margin: 0;
+}

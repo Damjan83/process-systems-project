@@ -1,0 +1,35 @@
+.blog-author {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: map-get($color , c-black-text);
+    margin-top: 16px;
+    position: relative;
+    margin-bottom: 72px;
+
+    &::before {
+        content: url('/src/assets/images/content-pages/user.svg');
+        margin-right: 9px;
+    }
+
+    &::after {
+        content: '';
+        width: 65px;
+        height: 2px;
+        background-color: map-get($color , c-blue);
+        position: absolute;
+        top: 53px;
+        left: 0;
+       
+    }
+}
+
+.blog-author__name {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: map-get($color , c-blue);
+    margin-left: 5px;
+}

@@ -1,0 +1,25 @@
+.blog-category {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    position: relative;
+}
+
+.blog-category__text {
+    margin-right: 10px;
+    color: map-get($color , c-black-text);
+}
+
+.blog-category__news, .blog-category__permalink {
+    color: map-get($color , c-blue);
+}
+
+
+.blog-category__news {
+    padding-right: 16px;
+    border-right: 2px solid map-get($color , c-blue);
+}
+
+.blog-category__permalink {
+    padding-left: 16px;
+} 

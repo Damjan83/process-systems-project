@@ -1,0 +1,232 @@
+.accordion {
+    background-color: map-get($color , c-white);
+    color: map-get($color , c-black-text);
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.3s;
+    display: flex;
+    position: relative;
+
+    &::after {
+        content: url('/src/assets/images/accordion-img/arrow-down.svg');
+        position: absolute;
+        right: 0;
+        transition: all 0.5s;
+    }
+      
+    &.active::after {
+        transform: rotate(180deg);
+    }
+}
+
+
+.accordion-list  {
+    max-width: 768px;
+    margin: 0 auto;
+}
+  
+.accordion-panel {
+    padding: 0 0 0 82px;
+    background-color: map-get($color , c-white);
+    overflow: hidden;
+    max-height: 0;
+    margin-bottom: 60px;
+    transition: all 0.5s ease-in-out;
+}
+
+.accordion__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 23px;
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 115px;
+        height: 1px;
+        background-color: map-get($color , c-acc-line);
+        position: absolute;
+        left: 0;
+        bottom: 18px;
+    }
+
+}
+
+.accordion__icon {
+    width: 64px;
+    height: 59px;
+    background-color: map-get($color , c-banner);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+}
+
+.accordion-panel {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    color: map-get($color , c-black-text);
+}
+
+/*--Accordion footer--*/
+
+.accordion--line-footer {
+    border-top: 1px solid map-get($color , c-acc-line);
+    padding: 20px 0 20px;
+
+    &:nth-child(1) {
+        border-top: none;
+    }
+
+    &:nth-child(7) {
+        border-bottom: 1px solid map-get($color , c-acc-line);
+    }
+}
+
+.accordion__title--footer {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: map-get($color , c-black-text);
+
+    &::after {
+        height: 0;
+    }
+    
+}
+
+.accordion-list--footer {
+    margin-top: 0;
+}
+
+.accordion-panel--foter {
+    padding: 0;
+    margin: 0;
+}
+
+/*--Accordion filter--*/
+
+.accordion-list--filter {
+    padding: 0 20px 50px 20px;
+}
+
+.accordion__title--filter {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 20px;
+    color: map-get($color , c-font-gray);
+
+    &::after {
+        content: '';
+        width: 0;
+        height: 0;
+    }
+}
+
+.accordion--filter {
+    padding: 27px 0 27px;
+    &::after {
+        content: url('/src/assets/images/category-icon-img/arrow-down-gray.svg');
+    }
+}
+
+.accordion-panel__checkbox {
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+        padding-bottom: 27px;
+    }
+
+    &:last-child {
+        padding-bottom: 27px;
+    }
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    margin: 0 14px 0 0;
+}
+
+.accordion-panel--filter {
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid map-get($color , c-acc-line);
+}
+
+.checkbox-label {
+    font-weight: 400;
+    font-size: 20px;
+    color: map-get($color , c-font-gray);
+}
+
+/*--Accordion artical list--*/
+.accordion-list--artical {
+    margin-top: 60px;
+}
+
+.accordion--artical {
+    display: flex;
+    align-items: center;
+    border: 1px solid map-get($color , c-blue);
+    //margin-bottom: 20px;
+
+    &.is-active {
+        background-color:  map-get($color , c-blue);
+
+        &::after {
+            content: url('/src/assets/images/Item-page-img/chevron-white.svg');
+            margin-right: 22px;
+            transform: rotate(360deg);
+        }
+
+        .accordion__title--artical {
+            color: map-get($color , c-white);
+        }
+    }
+
+    &::after {
+        content: url('/src/assets/images/Item-page-img/chevron-blue.svg');
+        margin-right: 22px;
+    }
+}
+
+.accordion-panel--artical {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    color: map-get($color , c-black);
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.accordion__title--artical {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: map-get($color , c-blue);
+    padding: 12px 14px 13px 22px;
+
+    &::after {
+        content: '';
+        width: 0;
+        height: 0;
+    }
+}
+
+.accordion-panel--artical-img {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 22px;
+}
+
+.accordion-panel--artical-text {
+    margin-top: 27px;
+}

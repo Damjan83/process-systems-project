@@ -1,0 +1,170 @@
+.info-content {
+    width: 100%;
+    margin-top: 73px;
+    padding: 27px 22px 69px 21px;
+    border: 1px solid map-get($color , c-acc-line);
+    position: relative;
+
+    &--content {
+        margin-top: 30px;
+    }
+
+    &--projects {
+        margin-top: 30px;
+        padding: 27px 22px 63px 21px;
+    }
+
+    &--line {
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: map-get($color , c-acc-line);
+            position: absolute;
+            top: -60px;
+            left: 0;
+        } 
+    }
+}
+
+.info-content__date {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: map-get($color , c-blue);
+    margin: 16px 0 10px;
+
+    &--date {
+        margin-left: 7px;
+        font-weight: 300;
+    }
+}
+
+.info-content__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 16px 0 11px 0;
+
+    &--projects {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+   
+
+    &--projects-fire {       
+        &::after {
+            content: url('/src/assets/images/content-pages/sem.png');
+            position: absolute;
+            top: 0;
+            right: 0;
+        }        
+    }
+
+    &--projects-coal {      
+        &::after {
+            content: url('/src/assets/images/content-pages/continental-coal.png');
+            position: absolute;
+            top: 0;
+            right: 0;
+        }  
+    }
+
+    &--projects-creek-coal {      
+        &::after {
+            content: url('/src/assets/images/content-pages/xstrata.png');
+            position: absolute;
+            top: 0;
+            right: 0;
+        }  
+    }
+
+    &--projects-matrix {      
+        &::after {
+            content: url('/src/assets/images/content-pages/matrix-icon.png');
+            position: absolute;
+            top: 12px;
+            right: 0;
+        }  
+    }
+
+    &--projects-narnia {      
+        &::after {
+            content: url('/src/assets/images/content-pages/narnia-icon.png');
+            position: absolute;
+            top: 12px;
+            right: 0;
+        }  
+    }
+
+    &--projects-riotinto {      
+        &::after {
+            content: url('/src/assets/images/content-pages/riotinto-icon.png');
+            position: absolute;
+            top: 0;
+            right: 0;
+        }  
+    }
+
+    &--projects-tarong {      
+        &::after {
+            content: url('/src/assets/images/content-pages/tarong-icon.png');
+            position: absolute;
+            top: 12px;
+            right: 0;
+        }  
+    }
+
+    &--projects-bengalla {      
+        &::after {
+            content: url('/src/assets/images/content-pages/bengalla-icon.png');
+            position: absolute;
+            top: 12px;
+            right: 0;
+        }  
+    }
+
+    &--projects-dawson {      
+        &::after {
+            content: url('/src/assets/images/content-pages/dawson-icon.png');
+            position: absolute;
+            top: 12px;
+            right: 0;
+        }  
+    }
+
+    &--projects-peak-dawson {      
+        &::after {
+            content: url('/src/assets/images/content-pages/peak-dawson-icon.png');
+            position: absolute;
+            top: 12px;
+            right: 0;
+        }  
+    }
+
+    &--projects-sea-world {      
+        &::after {
+            content: url('/src/assets/images/content-pages/sea-world-icon.png');
+            position: absolute;
+            top: 12px;
+            right: 0;
+        }  
+    }
+}
+
+.info-content__title-text {
+    width: 100%;
+    max-width: 190px;
+    height: 81px;
+    display: flex;
+    align-items: center;
+}
+
+.info-content__text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    color: map-get($color , c-black-text);
+}
+

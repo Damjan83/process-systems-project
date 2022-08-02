@@ -1,0 +1,18 @@
+.header-banner {
+    width: 100%;
+    background-color: map-get($color , c-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 0;
+}
+
+.header-banner__img {
+    width: 22px;
+    height: 18px;
+}
+
+.header-banner__text {
+    color: map-get($color , c-white);
+    margin-left: 13px;
+}

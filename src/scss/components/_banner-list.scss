@@ -1,0 +1,31 @@
+.banner-list {
+    padding: 0 0 0 36px;
+    margin-top: 67px;
+}
+
+.banner-list__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.banner-list__title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 31px;
+    text-transform: uppercase;
+    color: map-get($color , c-white);
+    margin-left: 16px;
+}
+
+.banner-list__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: map-get($color , c-white);
+    margin-left: 16px;
+}

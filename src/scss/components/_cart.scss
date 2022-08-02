@@ -1,0 +1,28 @@
+.cart {
+    padding: 10px 11px 7px;
+    position: relative;
+}
+
+.cart__img {
+    width: 22px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cart__amounth {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: map-get($color , c-order-box);
+    border-radius: 50%;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart__value {
+    font-weight: 600;
+    font-size: 8px;
+}

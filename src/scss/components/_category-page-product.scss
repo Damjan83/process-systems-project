@@ -1,0 +1,26 @@
+.category-product {
+    border-bottom: 1px solid map-get($color , c-acc-line);
+    padding-bottom: 52px;
+}
+
+.category-product__title {
+    line-height: 33px;
+    margin-bottom: 19px;
+}
+
+.category-product__desc {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.category-product__item {
+    margin-top: 29px;
+    &::before {
+        content: url('/src/assets/images/category-icon-img/item-actuators.png');
+        margin-right: 7px;
+    }
+    &::after {
+        content: url('/src/assets/images/category-icon-img/item-actuators-black.png');
+    }
+}

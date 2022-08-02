@@ -1,0 +1,17 @@
+.calendar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    &::before {
+        content: url('/src/assets/images/content-pages/calendar.svg');
+        margin-right: 9px;
+    }
+
+}
+
+.calendar__date {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 17px;
+}

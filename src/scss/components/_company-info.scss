@@ -1,0 +1,32 @@
+.company-info {
+    text-align: center;
+    margin-top: 64px;
+}
+
+.company-info__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: map-get($color , c-black-text);
+    margin-bottom: 19px;
+}
+
+.company-info__text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: map-get($color , c-black-text);
+}
+
+.company-info-banner {
+    margin: 0 -20px;
+
+    &--cart {
+        margin-top: 97px;
+    }
+
+    &--about-us {
+        margin-top: 128px;
+    }
+}
+

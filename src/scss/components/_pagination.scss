@@ -1,0 +1,33 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    margin: 85px 0 88px 0;
+}
+
+.pagination__number {
+    width: 44px;
+    height: 44px;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: map-get($color, c-grey);
+
+      
+    &:nth-child(2) {
+        margin: 0 17px;
+    }
+    
+
+    &.is-active {
+        color: map-get($color , c-blue);
+        border: 1px solid map-get($color , c-blue);
+    }
+}
+
+.pagination__icon {
+    margin-left: 20px;
+}

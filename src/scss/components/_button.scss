@@ -1,0 +1,272 @@
+.btn {
+    padding: 10px 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn--blue {
+    background-color: map-get($color , c-blue);
+    border: none;
+    color: map-get($color , c-white);
+    margin-left: 35px;
+}
+
+.btn--cta {
+    width: 100%;
+    max-width: 121px;
+    background-color: map-get($color , c-button-yellow);
+    margin-left: 35px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.btn--link {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: map-get($color , c-banner);
+    padding: 0;
+    text-align: left;
+    display: flex;
+
+    &::after {
+        content: url('/src/assets/images/chevron-blue.svg');
+        margin-left: 9px;
+    }
+}
+
+.btn--link-more {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    &::after {
+        content: '';
+    }
+}
+
+.btn--top {
+    width: 44px;
+    height: 44px;
+    background-color: map-get($color , c-blue);
+    border: none;
+}
+
+.btn--link-read {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+
+    &::after {
+        content: '';
+    }
+}
+
+.btn--filter {
+    padding: 10px 29px 10px 29px;
+    border: 1px solid map-get($color , c-acc-line);
+    margin-right: 16px;
+}
+
+.btn--popular {
+    padding: 10px 15px 10px 16px;
+    border: 1px solid map-get($color , c-acc-line);
+}
+
+.btn--filter-text, .btn--popular-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.btn--filter-text {
+    &::before {
+        content: url('/src/assets/images/category-icon-img/filter-icon.svg');
+        margin-right: 9px;
+    }
+}
+
+.btn--popular-text {
+    &::after {
+        content: url('/src/assets/images/category-icon-img/chevron-popular.svg');
+        margin-left: 14px;
+    }
+}
+
+.btn--select, .btn--comment {
+    width: 100%;
+    max-width: 235px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    background-color: map-get($color , c-blue);
+    color: map-get($color, c-white);
+    padding: 12px 0 11px;
+    cursor: pointer;
+}
+
+.btn--print {
+    width: 100%;
+    max-width: 201px;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: map-get($color , c-blue);
+    color: map-get($color , c-white);
+    padding: 12px 32px 12px 52px;
+    line-height: 24px;
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 39px;
+
+    &::before {
+        content: url('/src/assets/images/Item-page-img/printer.svg');
+        display: flex;
+        align-items: center;
+        margin-right: 13px;
+        position: absolute;
+        top: 12px;
+        left: 32px;
+    }
+}
+
+.btn--select-backorder  {
+    background-color: map-get($color , c-backorder);
+}
+
+/*--send enquiry--*/
+.btn--submit, .btn--checkout {
+    width: 100%;
+    margin-top: 24px;
+    border: none;
+    background-color: map-get($color , c-blue);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    color: map-get($color , c-white);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &::before {
+        content: url('/src/assets/images/Item-page-img/letter-submit.svg');
+        position: absolute;
+        top: 12px;
+        left: 69px;
+    }
+}
+.btn--submit-text {
+    margin-left: 24px;
+}
+
+/*--cart checkout--*/
+
+.btn--checkout {
+    margin-top: 20px;
+    position: relative;
+
+    &::before {
+        content: url('/src/assets/images/cart/padlock-white.svg');
+        position: absolute;
+        top: 9px;
+        left: 69px;
+    }
+}
+
+.btn--checkout-text {
+    margin-left: 15px;
+}
+
+
+.btn--checkout-cart {
+    margin-top: 17px;
+}
+
+.btn--back-to-shop, .btn--update {
+    width: 100%;
+    border: 0.5px solid map-get($color , c-black-text);
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    padding: 10px 70px 9px 70px;
+    color: map-get($color , c-black-text);
+
+    &::before {
+        content: url('/src/assets/images/cart/arrow-back-to-shop.svg');
+        margin-right: 9px;
+    }
+}
+
+.btn--update {
+    background-color: map-get($color , c-acc-line);
+    border: none;
+    margin-top: 19px;
+   
+    &::before {
+        content: url('/src/assets/images/cart/change-icon.svg');
+    }
+}
+
+.btn--checkout-yellow {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    background-color: map-get($color , c-order-box);
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 167px;
+    margin-top: 17px;
+
+    &::before {
+        content: url('/src/assets/images/cart/paypal.svg');
+        margin-right: 12px;
+        position: absolute;
+        top: 10px;
+        left: 67px;
+    }
+}
+
+/*--projects enquiry--*/
+.btn--enquiry {
+    width: 100%;
+    max-width: 246px;
+    background-color: map-get($color , c-blue);
+    position: relative;
+    text-transform: uppercase;
+    color: map-get($color , c-white);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 12px 16px 10px 56px;
+    margin: 45px 0 112px;
+
+    &::before {
+        content: url('/src/assets/images/content-pages/small-letter.svg');
+        margin-right: 12px;
+        position: absolute;
+        top: 12px;
+        left: 42px;
+    }
+}
+
+.btn--comment {
+   max-width: 258px;
+   margin-top: 52px;
+
+    &::before {
+        content: url('/src/assets/images/content-pages/comment.svg');
+        margin-right: 12px;
+    }
+    
+}

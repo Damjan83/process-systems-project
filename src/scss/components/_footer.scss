@@ -1,0 +1,47 @@
+.footer-top {
+    padding-top: 48px;
+
+    a {
+        display: flex;
+        &:nth-child(3) {
+            margin: 0 18px 0 18px;
+        }  
+    
+        &:nth-child(2) {
+            margin-left: 13px;
+        }
+    }
+}
+
+.footer-top__text {
+    margin: 32px 0 26px 0;
+}
+
+.footer-follow-us {
+    display: flex;
+    align-items: center;
+    margin-bottom: 42px;
+    color: map-get($color , c-font-gray);
+}
+
+.footer-top__text {
+    color: map-get($color , c-font-gray);
+}
+
+.footer__guide {
+    border-bottom: 1px solid map-get($color , c-acc-line);
+    padding-bottom: 47px;
+}
+
+.footer__guide__book {
+    margin-right: 16px;
+}
+
+.footer-body {
+    position: relative;
+}
+
+
+
+
+

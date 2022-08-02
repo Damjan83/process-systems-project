@@ -1,0 +1,41 @@
+/*--Radio button--*/
+.radio {
+	margin-right: 15px;
+}
+
+input[type=radio] {
+	-webkit-appearance: none;
+	appearance: none;
+	background: map-get($color, c-white);
+	border: 1px solid map-get($color, c-black);
+	height: 14px;
+	width: 14px;
+	border-radius: 100%;
+	vertical-align: text-bottom;
+	position: relative;
+    margin: 0;
+	margin-right: 15px;
+	
+	&::before {
+		content: '';
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		overflow: hidden;
+		top: 0;
+        height: 8px;
+        width: 8px;
+	}
+
+    &:checked {
+        border: 1px solid map-get($color, c-black);
+    
+        &:before {
+            border: 1px solid transparent;
+            border-radius: 100%;
+            background: map-get($color, c-black);
+        }
+    }
+}

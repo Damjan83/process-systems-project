@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <title>Project</title>
+</head>
+<body id="main" class="main">
+
+    <header class="header">
+        <div class="nav">
+            <div class="nav__header">
+                <h1 class="nav__title">Main Menu</h1>
+                <img class="close-icon" src="./src/assets/images/close-icon.svg" alt="close-icon">
+            </div>
+    
+            <ul class="nav-list">
+                <li class="nav-list__item  nav-icon-arrow"><a href="category.html">Shop By Category</a></li>
+                <li class="nav-list__item  nav-icon-arrow"><a>References</a></li>
+                <li class="nav-list__item"><a href="blog.html">Blog</a></li>
+                <li class="nav-list__item"><a href="about-us.html">About Us</a></li>
+                <li class="nav-list__item "><a>Contact Us</a></li>
+            </ul>
+    
+            <ul class="nav-list nav-list--grey">
+                <li class="nav-list__item nav-icon-log"><a>Login / Register</a></li>                                                       
+                <li class="nav-list__item nav-icon-wish"><a> Wishlist</a></li>                                                      
+                <li class="nav-list__item nav-icon-track"><a>Track Order</a></li>                   
+                <li class="nav-list__item nav-icon-phone"><a>1300 887 880</a></li>
+            </ul>
+        </div>
+
+        <div class="top-bar">
+            <div class="top-bar__contact">
+                <img class="top-bar__icon" src="./src/assets/images/phone.svg" alt="contact">
+                <p class="top-bar__phone">1300 887 880</p>
+            </div>
+            <div class="top-bar__login">
+                <img class="top-bar__sigin" src="./src/assets/images/sigin.svg" alt="signin">
+                <p class="login">Login/Register</p>
+            </div>          
+        </div>
+
+        <div class="header-menu">
+            <div class="mobile-menu">
+                <img class="mobile-menu__burger" src="./src/assets/images/burger-menu.svg" alt="mobile-menu">
+            </div>
+            <div class="website-logo">
+                <img class="website-logo__img" src="./src/assets/images/website_logo.png" alt="logo">
+            </div>
+            <div class="header-search">
+                <img class="header-search__img" src="./src/assets/images/search.svg" alt="search">
+            </div>
+            <div class="cart">
+                <a href="cart.html"><img class="cart__img" src="./src/assets/images/shopping-cart.svg" alt="cart"></a>
+                <div class="cart__amounth">
+                    <div class="cart__value">0</div>
+                </div>
+            </div>          
+        </div>
+
+        <div class="header-banner">
+            <img class="header-banner__img" src="./src/assets/images/delivery-truck.svg" alt="free shipping">
+            <h4 class="header-banner__text">Free Shipping Australia Wide</h4>
+        </div>      
+    </header>  
+
+    <main class="wraper">
+        <section>
+            <div class="cart-title">
+                <h2>shopping cart</h2>
+            </div>
+            <div class="btn btn--checkout">
+                <p class="btn--checkout-text">checkout now</p>
+            </div>
+            <div class="cart-list">
+                <div class="cart-list__title">
+                    <p class="cart-list__title-desc">item description</p>
+                    <p class="cart-list__title-qty">qty</p>
+                    <p class="cart-list__title-price">price</p>
+                </div>
+                <ul class="cart-list__info">
+                    <li class="cart-list__item">
+                        <div class="cart-list__item-desc">
+                            <img src="./src/assets/images/cart/star-drice-sleeve.svg" alt="star drive sleeve">
+                            <div class="cart-list__item-text">22mm x 14mm Star Drive Sleeve</div>
+                        </div>
+                        <div class="cart-list__item-qty"><p class="cart-qty">1</p></div>
+                        <div class="cart-list__item-price"><p class="cart-price">$11.00</p></div>                      
+                    </li>
+                    <li class="cart-list__item">
+                        <div class="cart-list__item-desc">
+                            <img src="./src/assets/images/cart/drive-dog.svg" alt="drive dog">
+                            <div class="cart-list__item-text">SS Drive Dog 36mm M x 27mm F x 140mm L</div>
+                        </div>
+                        <div class="cart-list__item-qty"><p class="cart-qty">1</p></div>
+                        <div class="cart-list__item-price"><p class="cart-price">$187.00</p></div>         
+                    </li>
+                </ul>
+            </div>
+            <div class="btn btn--back-to-shop">continue shopping</div>
+            <div class="btn btn--update">update changes</div>
+            <div class="cart-list cart-list--total">
+                <div class="cart-list__title cart-list__title--total ">
+                    <h4>sub total</h4>
+                    <div class="cart-sub-total-price">
+                        <h4 class="sub-total-price">$198.00</h4>
+                    </div>
+                </div>
+                <ul class="cart-list__info">
+                    <li class="cart-list__account">
+                        <input class="radio" type="radio" id="pick-up">
+                        <label for="pick-up"><h4 class="cart-list__account-text">Pick Up In Store - FREE</h4></label>                      
+                    </li>
+                    <li class="cart-list__account">
+                        <input class="radio" type="radio" id="standard-ship">
+                        <label for="standard-ship"><h4 class="cart-list__account-text">Standard Shipping - FREE</h4></label>                     
+                    </li>
+                    <li class="cart-list__account cart-list__account-price">
+                        <div class="cart-list__input">
+                            <input class="radio" type="radio" id="star-track">
+                            <label for="star-track"><h4 class="cart-list__account-text">Star Track 3kg A/bag</h4></label>     
+                        </div>
+                        <h4 class="star-track-price">$15.00</h4>
+                    </li>
+                    <li class="cart-list__account cart-list__account--shipping">
+                        <h4 class="cart-list__account-text">Shipping Cost to Post Code</h4>
+                        <h4 class="post-code-price">$0.00</h4>
+                    </li>
+                    <li class="cart-list__account cart-list__account--shipping">
+                        <h4>GST Inc.</h4>
+                        <h4 class="gst-price">$18.00</h4>
+                    </li>
+                    <li>
+                        <div class="cart-total-price">
+                            <p class="cart-total-price__title">shopping cart total</p>
+                            <div class="total-price">$198.00</div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn btn--checkout-yellow">checkout</div>
+                <div class="btn btn--checkout btn--checkout-cart">checkout now</div>
+            </div>
+        </section>
+        <section>
+            <div class="company-info-banner company-info-banner--cart">
+                <div class="banner banner__company">
+                    <div class="banner__content banner__content--info">
+                        <ul class="banner-list banner-list--info">
+                            <li class="banner-list__item">                       
+                                <img src="./src/assets/images/quality-icon.svg" alt="quality-icon">                     
+                                <div class="banner-list__content">
+                                    <div class="banner-list__title">quality</div>
+                                    <div class="banner-list__text">You Can Trust</div> 
+                                </div>                       
+                            </li>
+                        
+                            <li class="banner-list__item">                       
+                                <img src="./src/assets/images/warranty-icon.svg" alt="warranty-icon">
+                                <div class="banner-list__content">
+                                    <div class="banner-list__title">full</div>
+                                    <div class="banner-list__text">Manufacturer’s Warranty</div>
+                                </div>                      
+                            </li>
+        
+                            <li class="banner-list__item">
+                                <img src="./src/assets/images/delivery-truck-blue.svg" alt="delivery truck">
+                                <div class="banner-list__content">
+                                    <div class="banner-list__title">free</div>
+                                    <div class="banner-list__text">Shipping Australia Wide</div>
+                                </div>                       
+                            </li>
+                        
+                            <li class="banner-list__item">
+                                <img src="./src/assets/images/despatch-icon.svg" alt="despatch-icon">
+                                <div class="banner-list__content">
+                                    <div class="banner-list__title">same day</div>
+                                    <div class="banner-list__text">Despatch</div>
+                                </div>                       
+                            </li>                   
+                        </ul> 
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </section>
+        <footer>
+            <div class="footer-top">
+                <img src="./src/assets/images/website_logo-footer.png" alt="website logo">
+                <h4 class="footer-top__text">At the forefront of the process control industry within Australia and the Pacific region since 1989.</h4>
+                <div class="footer-follow-us">
+                    <div class="footer-follow-us__text"><h4>Follow us:</h4></div>
+                    <a href="https://twiter.com"><img class="follow-us__icon" src="./src/assets/images/twiter.png" alt="twiter"></a>
+                    <a href="https://linkedin.com"><img class="follow-us__icon" src="./src/assets/images/linkedin.png" alt="linkedin"></a>
+                    <a href="https://youtube.com"><img class="follow-us__icon" src="./src/assets/images/youtube.png" alt="youtube"></a>
+                </div>
+                <div class="footer__guide">
+                    <img class="footer__guide__book" src="./src/assets/images/BG8_Buyers_Guide_06-1.png" alt="guide">
+                    <img class="footer__guide__book" src="./src/assets/images/BG8_Buyers_Guide_06-2.png" alt="guide">
+                </div>
+                
+            </div>
+            <div class="footer-body">
+                <div class="accordion-list accordion-list--footer">
+                    <div class="accordion accordion--line-footer">
+                        <p class="accordion__title accordion__title--footer">about us</p>
+                    </div>               
+                    <div class="accordion-panel accordion-panel--foter">
+                        <ul class="nav-list nav-list--footer">
+                            <li class="nav-list__item"><a href="about-us.html"><h4>About Us</h4></a></li>
+                            <li class="nav-list__item"><a href="blog.html"><h4>Our blog</h4></a></li>
+                            <li class="nav-list__item"><a><h4>Contact Us</h4></a></li>
+                            <li class="nav-list__item"><a href="premises.html"><h4>Premises</h4></a></li>
+                            <li class="nav-list__item"><a><h4>Project</h4></a></li>
+                            <li class="nav-list__item"><a href="product-warranty.html"><h4>Warranty & Warning</h4></a></li>
+                            <li class="nav-list__item"><a href="youtube-videos.html"><h4>Youtube videos</h4></a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="accordion accordion--line-footer">
+                        <p class="accordion__title accordion__title--footer">service</p>
+                    </div>               
+                    <div class="accordion-panel accordion-panel--foter">
+                        <ul class="nav-list nav-list--footer">
+                            <li class="nav-list__item nav-list__item--footer"><a><h4>About Us</h4></a></li>
+                            <li class="nav-list__item nav-list__item--footer"><a><h4>Our blog</h4></a></li>
+                            <li class="nav-list__item nav-list__item--footer"><a><h4>Contact Us</h4></a></li>
+                            <li class="nav-list__item nav-list__item--footer"><a><h4>Premises</h4></a></li>
+                            <li class="nav-list__item nav-list__item--footer"><a><h4>Project</h4></a></li>
+                            <li class="nav-list__item nav-list__item--footer"><a><h4>Warranty & Warning</h4></a></li>
+                            <li class="nav-list__item nav-list__item--footer"><a><h4>Youtube videos</h4></a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="accordion accordion--line-footer">
+                        <p class="accordion__title accordion__title--footer">information</p>
+                    </div>               
+                    <div class="accordion-panel accordion-panel--foter">
+                        <ul class="nav-list nav-list--footer">
+                            <li class="nav-list__item nav-list__item--footer"><a><h4>About Us</h4></a></li>
+                            <li class="nav-list__item nav-list__item--footer"><a><h4>Our blog</h4></a></li>
+                            <li class="nav-list__item nav-list__item--footer"><a><h4>Contact Us</h4></a></li>
+                            <li class="nav-list__item nav-list__item--footer"><a><h4>Premises</h4></a></li>
+                            <li class="nav-list__item nav-list__item--footer"><a><h4>Project</h4></a></li>
+                            <li class="nav-list__item nav-list__item--footer"><a><h4>Warranty & Warning</h4></a></li>
+                            <li class="nav-list__item nav-list__item--footer"><a><h4>Youtube videos</h4></a></li>
+                        </ul>                    
+                    </div>
+    
+                    <div class="accordion accordion--line-footer">
+                        <p class="accordion__title accordion__title--footer">contact</p>
+                    </div>               
+                    <div class="accordion-panel accordion-panel--foter">
+                        <ul class="nav-list nav-list--footer">
+                            <ul class="nav-list nav-list--footer">
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>About Us</h4></a></li>
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Our blog</h4></a></li>
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Contact Us</h4></a></li>
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Premises</h4></a></li>
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Project</h4></a></li>
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Warranty & Warning</h4></a></li>
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Youtube videos</h4></a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-body__btn">
+                    <a href="#main">
+                        <div class="btn btn--top">
+                            <img src="./src/assets/images/chevron--btn.svg" alt="chevron">
+                        </div>
+                    </a>
+                </div>
+               
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__title">Copyright © 2022 Process Systems</p>
+                <div class="footer-bottom__icon">
+                    <img src="./src/assets/images/visa.svg" alt="visa">
+                    <img src="./src/assets/images/mastercard.svg" alt="mastercard">
+                    <img src="./src/assets/images/paypal.svg" alt="paypal">
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="dist/js/app.js"></script>
+</body>
+</html>

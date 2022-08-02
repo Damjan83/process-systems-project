@@ -1,0 +1,12 @@
+.page-nav__text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: map-get($color , c-black-text);
+    margin-left: 10px;
+}
+
+.page-nav {
+    display: flex;
+    margin: 22px 0 23px;
+}

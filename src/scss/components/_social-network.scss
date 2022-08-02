@@ -1,0 +1,15 @@
+.social-networks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.social-networks__text {
+    margin-right: 19px;
+    color: map-get($color , c-black-text);
+}
+
+.social-networks__icon {
+    margin-right: 25px;
+}

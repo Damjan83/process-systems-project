@@ -1,0 +1,38 @@
+.rating {
+    width: 100%;
+}
+
+.rating__text, .rating__reviews {
+    display: flex;
+    align-items: center;
+}
+
+.rating__text {
+    font-weight: 600;
+    color: map-get($color , c-black-text);
+    margin-top: 45px;
+
+    &--title {
+        width: 100%;
+        max-width: 141px;
+        font-size: 24px;
+        line-height: 32px;
+        margin-right: 28px;
+    }
+
+    &--reviews {
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 7px;
+    }
+}
+
+.rating__reviews-img {
+    margin-right: 25px;
+}
+
+.rating__img {
+    width: 100%;
+    text-align: center;
+    margin-top: 59px;
+}

@@ -1,0 +1,13 @@
+.list__item {
+    width: 100%;
+    max-width: 231px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: map-get($color , c-item-background);
+    margin-right: 25px;
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+}

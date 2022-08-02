@@ -1,0 +1,20 @@
+.company-desc {
+    margin: 74px 0 93px 0;
+}
+
+.company-desc__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: map-get($color , c-black-text);
+    margin-bottom: 29px;
+}
+
+.company-desc__text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: map-get($color , c-black-text);
+}

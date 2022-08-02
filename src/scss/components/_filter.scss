@@ -1,0 +1,45 @@
+.filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid map-get($color , c-acc-line);
+    margin-top: 37px;
+}
+
+.list-blue, .grid-gray {
+    display: none;
+}
+
+.grid-blue, .grid-gray {
+    margin: 0 23px 0 20px;
+}
+
+.filter__found, .filter__found-items {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: map-get($color , c-black-text);
+}
+
+.filter__found-items {
+    font-weight: 300;
+}
+
+.filter__info, .filter__button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.found {
+    margin-right: 9px;
+}
+
+.filter__button {
+    padding: 0px 22px 23px 22px;
+}
+
+.filter__info {
+    padding: 21px 22px 22px 22px ;
+}
+

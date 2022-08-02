@@ -1,0 +1,66 @@
+.slide-item {
+    width: 100%;
+    max-width: 231px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: map-get($color , c-item-background);
+
+    &--reviews {
+        border: 1px solid map-get($color , c-acc-line);
+        align-items: flex-start;
+        padding: 23px 18px 24px 18px;
+    }
+}
+
+.slide-item__img {
+   padding: 26px 44px 13px 42px;
+}
+
+.slide-item__customer-name {
+    margin-right: 9px;
+}
+
+.slide-item__text {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    padding: 0 41px 26px 40px;
+    text-align: center;
+}
+
+.slide-item__customer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.slide-item__customer-text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    color: map-get($color , c-black-text);
+    margin: 17px 0 53px;
+}
+
+.slide-item__customer-date {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: map-get($color , c-gray);
+    width: 100%;
+    text-align: right;
+}
+
+.slide-item__verified {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: map-get($color , c-blue);
+    display: flex;
+
+    &::before {
+        content: url('/src/assets/images/content-pages/ok-blue.svg');
+        margin-right: 7px;
+    }
+}

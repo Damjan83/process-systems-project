@@ -1,0 +1,53 @@
+.user-comment {
+    width: 100%;
+    border: 1px solid map-get($color , c-acc-line);
+    margin-top: 50px;
+    padding: 26px 20px 31px 20px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 19px;
+}
+
+
+.user__name {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 21px;
+}
+
+.user__name-name, .user-comment__replay {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 23px;
+    color: map-get($color , c-blue);
+}
+
+.user__name-date {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: map-get($color , c-gray);
+    margin-top: 4px;
+}
+
+.user-comment__text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    color: map-get($color , c-black-text);
+    margin-bottom: 28px;
+}
+
+.user-comment__replay {
+    display: flex;
+
+    &::before {
+        margin-right: 12px;
+        content: url('/src/assets/images/content-pages/replay-icon.svg');
+    }
+}
+

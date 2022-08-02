@@ -1,0 +1,54 @@
+.top-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 20px 10px 20px;
+}
+
+.top-bar__contact, .top-bar__login {
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans' , sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.top-bar__icon, .top-bar__sigin {
+    margin-right: 9px;
+}
+
+.header-menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 28px 20px 25px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.mobile-menu, .website-logo, .search, .shopping-cart {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-menu {
+    cursor: pointer;
+    padding: 12.66px 11px;
+}
+
+.header-search {
+    padding: 10px;
+}
+
+.header__contact, .header__login {
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon, .sigin-icon {
+    margin-right: 9px;
+}
+
+
