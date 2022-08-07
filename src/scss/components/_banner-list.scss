@@ -1,6 +1,10 @@
 .banner-list {
     padding: 0 0 0 36px;
     margin-top: 67px;
+
+    @include for-size(phone-large) {
+        margin-top: 0;
+    }
 }
 
 .banner-list__item {
@@ -10,6 +14,18 @@
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    @include for-size(phone-large) {
+        margin-bottom: 41px;
+    }
+
+    &--bottom {
+        margin-bottom: 50px;
+
+        @include for-size(phone-large) {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -29,3 +45,18 @@
     color: map-get($color , c-white);
     margin-left: 16px;
 }
+
+
+.banner-list--info {
+    padding: 0;
+    margin: 0;
+  
+    @include for-size(phone-large) {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  

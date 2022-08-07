@@ -23,6 +23,11 @@
           background-color: map-get($color , c-banner-blue);
       }
   }
+
+  @include for-size(phone-large) {
+    min-height: 362px;
+    background-image: url('/src/assets/images/banner-backround-desktop.png');
+  }
 }
 
 .banner__title {
@@ -32,6 +37,14 @@
     color: map-get($color , c-white);
     text-transform: uppercase;
     padding: 53px 35px 8px 35px;
+
+    @include for-size(phone-large) {
+      width: 100%;
+      max-width: 656px;
+      font-size: 60px;
+      line-height: 68px;
+      padding: 0;
+    }
 }
 
 .banner__desc {
@@ -40,6 +53,11 @@
     line-height: 22px;
     color: map-get($color , c-white);
     padding: 0 52px 24px 35px;
+
+    @include for-size(phone-large) {
+      padding: 0;
+      margin: 14px 0 31px;
+    }
 }
 
 .banner__content {
@@ -49,10 +67,30 @@
   width: 100%;
   height: 100%;
   z-index: 2;
-}
+
+  @include for-size(phone-large) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  @include for-size(desktop-extra-large) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 53px 98px 53px 104px;
+  }
+} 
 
 .banner__content--small {
   text-align: center;
+
+  @include for-size(phone-large) {
+    display: block;
+    text-align: left;
+    padding: 0;
+  }
 }
 
 .banner--small {
@@ -60,10 +98,35 @@
   min-height: 351px;
   background-image: url('/src/assets/images/banner-small.png');
   margin-top: 72px;
+
+ 
+
+  @include for-size(phone-large) {
+    min-height: 200px;
+    background-image: url('/src/assets/images/banner-small-desktop.png');
+    background-color: none;
+
+    &:before{
+      background-color: unset;
+    }
+  }
 }
 
 .banner__content-title {
+  position: relative;
   margin-top: 51px;
+
+  @include for-size(phone-large) {
+    margin-top: 62px;
+
+    &::before {
+      position: absolute;
+      top: 0px;
+      left: 123px;
+      margin-top: 10px;
+    }
+  }
+
     &::before {
       content: url('/src/assets/images/delivery-truck-big.svg');
     }
@@ -73,6 +136,10 @@
   line-height: 33px;
   color: map-get($color , c-white);
   padding: 24px 80px;
+
+  @include for-size(phone-large) {
+    padding: 0 0 0 225px;
+  }
 }
 
 .content-text__small{
@@ -81,12 +148,30 @@
   line-height: 23px;
   color: map-get($color , c-white);
   padding: 0 36px;
+
+  @include for-size(phone-large) {
+    padding: 0 0 0 225px;
+  }
 }
 
 .banner__company {
   min-height: 460px;
   background-image: url('/src/assets/images/banner-blue.png');
   margin-top: 64px;
+
+  @include for-size(phone-large) {
+    min-height: 118px;
+    background-image: url('/src/assets/images/banner-small-desktop-background.png');
+  }
+
+  @include for-size(desktop-large) {
+    width: auto;
+  }
+
+  @include for-size(desktop-extra-large) {
+    width: auto;
+    margin: 0 -160px;
+  }
 }
 
 
@@ -94,10 +179,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include for-size(desktop-large) {
+    padding: 0 20px;
+  }
+
+  @include for-size(desktop-extra-large) {
+    padding: 0 160px;
+  }
 }
 
 
-.banner-list--info {
-  padding: 0;
-  margin: 0;
-}
+
+

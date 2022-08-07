@@ -1,12 +1,15 @@
 import {accordion, accArtical} from "./components/accordion";
 import cSelect from "./components/select";
 import {zenscroll} from "../../node_modules/zenscroll";
+import { tns } from "tiny-slider";
 
 cSelect();
-
-
 accordion();
 accArtical();
+
+window.addEventListener('resize', function() {
+    accordion()
+});
 
 
 const mobileMenu = document.querySelector('.mobile-menu__burger');
@@ -25,6 +28,15 @@ const navEnquiry = document.querySelector('.nav--enquiry');
 const enquiry = document.querySelector('.artical-option__add-enquiry');
 const closeIconEnquiry = document.querySelector('.close-icon--enquiry');
 const mySliderCat = document.querySelector('.my-slider-cat');
+const burgerDesktop = document.querySelector('.banner__menu-category-img');
+const shopCatDesktop = document.querySelector('.banner-menu');
+const bannerMenuList =  document.querySelectorAll('.banner-menu__list');
+const bannerMenuContent = document.querySelector('.banner-menu-content')
+
+window.addEventListener('scroll' , function () {
+  const headerMenu = document.querySelector('.header-menu');
+  headerMenu.classList.toggle('header-menu--sticky', window.scrollY > 0);
+})
 
 if(enquiry) {
   enquiry.addEventListener('click' , function () {
@@ -87,6 +99,16 @@ if(gridGray) {
 }
 
 
+burgerDesktop.addEventListener('click' , function () {
+  shopCatDesktop.classList.toggle('is-active')
+});
+
+
+for(let i = 0; i < bannerMenuList.length; i++) {
+  bannerMenuList[i].addEventListener('click' , function () {
+    bannerMenuContent.classList.toggle('is-active');
+  })
+}
 
 
 
@@ -106,17 +128,14 @@ var slider = tns({
     "loop": false,
     "controls": false,
     "nav": false,
-    "responsive": {
-        "350": {
-            "items": 1.4
-        },
-        "768": {
-            "items": 3
-        }
-    },
+    "items": 6,
+    "fixedWidth": 241,
+    "gutter": 30,
     "swipeAngle": false,
     "speed": 400
 });
+
+tns();
 
 if(mySliderCat) {
   var slider = tns({
@@ -125,12 +144,16 @@ if(mySliderCat) {
     "loop": false,
     "controls": false,
     "nav": false,
+    "gutter": '30',
     "responsive": {
         "350": {
             "items": 1.4
         },
         "768": {
             "items": 3
+        },
+        "1920": {
+            "items": 5.5
         }
     },
     "swipeAngle": false,

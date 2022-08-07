@@ -1,6 +1,8 @@
 //Base
 @import 'base/_config';
 @import 'base/_fonts';
+//config
+@import 'config/_mediaQueries';
 
 // Components
 @import 'components/_header';
@@ -19,6 +21,7 @@
 @import 'components/_company-info';
 @import 'components/_footer';
 @import 'components/_list';
+@import 'components/_search';
 // components category page
 @import 'components/_category-page-product-nav';
 @import 'components/_category-page-product';

@@ -1,0 +1,33 @@
+.search {    
+    display: none;
+    
+    @include for-size(tablet) {
+        margin: 0 78px;
+        display: flex;
+        flex: 5;
+        width: 100%;
+        max-width: 902px;
+    }
+}
+
+.search__bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    display: none;
+
+    @include for-size(phone-large) {
+        display: flex;
+    }
+
+}
+
+.search-input {
+    width: 100%;
+    max-width: 902px;
+    padding: 12px 29px 12px 29px;
+    font-weight: 400;
+    font-size: 16px;
+    color: map-get($color , c-gray);
+    border: 1px solid map-get($color , c-gray);
+}

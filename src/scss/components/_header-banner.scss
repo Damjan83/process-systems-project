@@ -1,10 +1,90 @@
 .header-banner {
-    width: 100%;
+    width: auto;
     background-color: map-get($color , c-blue);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 13px 0;
+    margin: 0 -20px;
+
+    @include for-size(desktop-large) {
+        margin: 0 -20px;
+        width: auto;
+    }
+
+    @include for-size(desktop-extra-large) {
+        margin: 0 -160px;
+        width: auto;
+    }
+}
+
+.header-banner__wraper {
+
+    @include for-size(desktop) {
+        width: 100%;
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @include for-size(desktop-large) {
+        width: 100%;
+        padding: 0 160px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+    }
+    
+}
+
+.header-banner__content, .header-banner__menu, .header-banner__menu-link {
+    display: flex;
+    align-items: center;
+}
+
+.header-banner__menu {
+    display: none;  
+    position: relative;
+
+    @include for-size(desktop) {
+        display: flex;
+    }
+}
+
+.header-banner__content {
+    justify-content: center;
+}
+
+.header-banner__menu-category {
+    display: flex;
+    align-items: center;
+    color: map-get($color , c-white);
+
+    &::after {
+        content: '';
+        width: 18px;
+        height: 1px;
+        background-color: map-get($color , c-white);
+        transform: rotate(90deg);
+        margin: 0 72px 0 74px;
+    }
+}
+
+.banner__menu-category-img {
+    margin-right: 19px;
+    cursor: pointer;
+}
+
+.header-banner__menu-link-text {
+    margin-right: 45px;
+    color: map-get($color , c-white);
+    text-decoration: none;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .header-banner__img {
@@ -15,4 +95,80 @@
 .header-banner__text {
     color: map-get($color , c-white);
     margin-left: 13px;
+}
+
+/*--header banner shop by category list--*/
+.banner-menu {
+    display: none;
+    width: 100%;
+    max-width: 292px;
+    position: absolute;
+    top: 28px;
+    left: 0px;
+    z-index: 3;
+    background-color: map-get($color , c-white);
+    border: 2px solid map-get($color , c-blue);
+
+  
+    @include for-size(desktop) {
+        display: none;
+
+        &.is-active {
+            display: block;
+        }
+    }
+    
+
+    
+}
+
+.banner-menu__list {
+    list-style: none;   
+    padding: 11px 22px 11px 22px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: map-get($color , c-gray);
+    cursor: pointer;
+
+    &::after {
+        content: url('/src/assets/images/category-img-desktop-bw/arrow-right-gray.svg');
+        position: absolute;
+        right: 22px;
+    }
+    &:nth-child(7), &:nth-child(8), &:nth-child(10) {
+        &::after {
+            content: '';
+        }
+    }
+
+    &--sub {
+        &::after {
+            content: '';
+        }
+    }
+}
+
+.banner-menu__img {
+    margin-right: 10px;
+}
+
+.banner-menu-content {
+    list-style: none;
+    position: absolute;
+    background-color: map-get($color , c-white);
+    border: 2px solid map-get($color , c-blue);
+    top: 0;
+    right: -247px;
+    display: none;
+
+    &.is-active {
+        display: block;
+    }
+}
+
+.banner-menu-content__text {
 }

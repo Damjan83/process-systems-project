@@ -1,3 +1,11 @@
+.reference {
+
+    @include for-size(phone-large) {
+        display: flex;
+        align-items: center;
+    }
+}
+
 .help-references, .help {
     background-image: url('/src/assets/images/help-section/help-background.png');
     padding-bottom: 45px;
@@ -5,6 +13,17 @@
 
 .help-references {
     margin-bottom: 45px;
+
+    @include for-size(phone-large) {
+        margin-bottom: 0;
+        margin-right: 26px;
+    }
+}
+
+.help {
+    @include for-size(phone-large) {
+        margin-left: 26px;
+    }
 }
 
 .help__title {

@@ -1,3 +1,13 @@
+.header {
+    padding: 0 20px;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    @include for-size(desktop-extra-large) {
+        padding: 0 160px;
+    }
+}
+
 .top-bar {
     width: 100%;
     display: flex;
@@ -6,7 +16,12 @@
     padding: 9px 20px 10px 20px;
 }
 
-.top-bar__contact, .top-bar__login {
+.top-bar__content {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar__contact, .top-bar__login, .top-bar__track, .top-bar__wish {
     display: flex;
     align-items: center;
     font-family: 'Noto Sans' , sans-serif;
@@ -14,6 +29,21 @@
     font-size: 13px;
     line-height: 18px;
 }
+
+.top-bar__track, .top-bar__wish {
+    display: none;
+
+    @include for-size(phone-large) {
+        display: flex;
+        border-right: 3px solid map-get($color , c-acc-line);
+        padding: 0 18px;
+    }
+}
+
+.top-bar__wish {
+    margin-right: 18px;
+}
+
 
 .top-bar__icon, .top-bar__sigin {
     margin-right: 9px;
@@ -23,9 +53,28 @@
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 28px 20px 25px;
-    justify-content: space-between;
+    padding: 28px 0 25px;
     position: relative;
+    justify-content: space-between;
+    transition: all .2s ease;
+
+
+    @include for-size(phone-large) {
+        padding: 28px 0 25px 0;
+        justify-content: space-between;
+    }
+}
+
+.header-menu--sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 999;
+    box-shadow: 0px 4px 67px rgba(0, 0, 0, 0.08);
+    transition: all .2s ease;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .mobile-menu, .website-logo, .search, .shopping-cart {
@@ -33,13 +82,32 @@
     align-items: center;
 }
 
+.website-logo {
+    display: flex;
+    align-items: center;
+    width: 160px;
+
+    @include for-size(phone-large) {
+        margin-right: 77px;
+        width: 228px;
+    }
+}
+
 .mobile-menu {
     cursor: pointer;
     padding: 12.66px 11px;
+
+    @include for-size(phone-large) {
+        display: none;
+    }
 }
 
 .header-search {
     padding: 10px;
+
+    @include for-size(tablet) {
+        display: none;
+    }
 }
 
 .header__contact, .header__login {
@@ -51,4 +119,38 @@
     margin-right: 9px;
 }
 
+.website-user {
+    display: none;
 
+    @include for-size(desktop) {
+        display: flex;
+    }
+}
+
+.website-user__content {
+    display: flex;
+    align-items: center;
+}
+
+.website-user__img {
+    padding: 10px;
+    background-color: map-get($color , c-item-background);
+
+    @include for-size(phone-large) {
+        margin-right: 10px;
+    }
+}
+
+.website-user__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: map-get($color , c-black-text);
+}
+
+.website-user__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: map-get($color , c-black-text);
+}

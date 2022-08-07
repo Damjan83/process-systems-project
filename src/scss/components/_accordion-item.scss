@@ -21,12 +21,21 @@
     &.active::after {
         transform: rotate(180deg);
     }
+
+   @include for-size(tablet) {
+        &::after {
+            content: '';
+        }
+   }
 }
 
 
 .accordion-list  {
-    max-width: 768px;
-    margin: 0 auto;
+
+    @include for-size(desktop) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
   
 .accordion-panel {
@@ -36,6 +45,10 @@
     max-height: 0;
     margin-bottom: 60px;
     transition: all 0.5s ease-in-out;
+
+    .active & {
+        max-height: 100%;
+    }
 }
 
 .accordion__title {
@@ -52,7 +65,7 @@
         position: absolute;
         left: 0;
         bottom: 18px;
-    }
+    }  
 
 }
 
@@ -86,6 +99,10 @@
     &:nth-child(7) {
         border-bottom: 1px solid map-get($color , c-acc-line);
     }
+
+    @include for-size(phone-large) {
+        width: auto;
+    }
 }
 
 .accordion__title--footer {
@@ -103,6 +120,10 @@
 
 .accordion-list--footer {
     margin-top: 0;
+
+    @include for-size(tablet) {
+        display: flex;
+    }
 }
 
 .accordion-panel--foter {
@@ -229,4 +250,52 @@
 
 .accordion-panel--artical-text {
     margin-top: 27px;
+}
+
+.accordion-list__wrapper {
+    width: 100%;
+
+    @include for-size(desktop) {
+        width: 29.59%;
+        display: flex;
+        flex-wrap: wrap;
+
+        &:nth-child(2), &:nth-child(5) {
+            margin: 0 65px 0 65px;
+        }      
+    }
+
+    @include for-size(desktop-large) {
+        width: 30.24%;
+        display: flex;
+        flex-wrap: wrap;
+
+        &:nth-child(2), &:nth-child(5) {
+            margin: 0 65px 0 65px;
+        }      
+    }
+
+    @include for-size(desktop-extra-large) {
+        width: 30.62%;
+        display: flex;
+        flex-wrap: wrap;
+
+        &:nth-child(2), &:nth-child(5) {
+            margin: 0 65px 0 65px;
+        }      
+    }
+
+    &--footer {
+        display: block;
+
+        @include for-size(desktop) {
+            width: 25%;
+            display: block;
+            flex-wrap: wrap;
+
+            &:nth-child(2), &:nth-child(5) {
+                margin: 0;
+            } 
+        }
+    }
 }

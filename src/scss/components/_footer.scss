@@ -1,5 +1,14 @@
+footer {
+    display: block;
+
+    @include for-size(desktop-large) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 .footer-top {
-    padding-top: 48px;
+    margin-top: 48px;
 
     a {
         display: flex;
@@ -10,6 +19,16 @@
         &:nth-child(2) {
             margin-left: 13px;
         }
+    }
+
+    @include for-size(desktop-large) {
+        width: 100%;
+        max-width: 320px;
+        margin-right: 146px;
+    }
+
+    @include for-size(desktop-large) {
+        margin-top: 71px;
     }
 }
 
@@ -39,6 +58,12 @@
 
 .footer-body {
     position: relative;
+
+    @include for-size(desktop-large) {
+        width: 100%;
+        margin-top: 71px;
+    }
+    
 }
 
 

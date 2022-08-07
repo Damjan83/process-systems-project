@@ -1,18 +1,31 @@
 const accordion = () => {
 
   const acc = document.getElementsByClassName('accordion');
- 
-    for (let i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {  
-          this.classList.toggle("active");        
-          let panel = this.nextElementSibling;
-          if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-          } else {
+
+    var windowWidth = window.innerWidth;
+
+
+    if(windowWidth > 992) {
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].classList.add("active");   
+            let panel = acc[i].nextElementSibling;
             panel.style.maxHeight = panel.scrollHeight + "px";
-          } 
-        });
+        }
+        return;
+    }else {
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {             
+                this.classList.toggle("active");     
+                    let panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }  
+            });
+        }
     }
+
 }
 
 const accArtical = () => {
@@ -29,6 +42,16 @@ const accArtical = () => {
     }
   })
   }
+}
+
+
+const removeEvent = (handler) => {
+  
+    const acc = document.getElementsByClassName('accordion');
+  
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].removeEventListener('click', handler)
+    }
 }
 
 

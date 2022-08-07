@@ -1,14 +1,38 @@
 .category {
     width: 100%;
-    max-width: 231px;
+    max-width: 241px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: map-get($color , c-item-background);
+    cursor: pointer;
+    position: relative;
+
+    @include for-size(desktop-large) {
+        padding: 30px;
+    }
+
+    &:hover {
+        background-image: url('/src/assets/images/category-desktop/background-img-desktop.png');
+
+        .category__title {
+            display: none;
+        }
+
+        .btn--shop {
+            display: block;
+            margin-top: 20px;
+        }
+    }
+
 }
 
 .category__img {
     padding: 26px 44px 13px 42px;
+
+    @include for-size(desktop) {
+        padding: 0;
+    }
 }
 
 .category__title {
@@ -17,4 +41,12 @@
     line-height: 30px;
     padding: 0 41px 26px 40px;
     text-align: center;
+    display: block;
+
+    @include for-size(phone-large) {
+        padding: 20px 0 6px 0;
+    }
 }
+
+
+

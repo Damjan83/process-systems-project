@@ -1,12 +1,26 @@
 .cart {
-    padding: 10px 11px 7px;
     position: relative;
+    display: flex;
+    align-items: center;
+
+    @include for-size(phone-large) {
+        padding: 0;
+        margin-left: 45px;
+    }
 }
 
 .cart__img {
-    width: 22px;
-    height: 20px;
     cursor: pointer;
+}
+
+.cart__link {
+    padding: 10px;
+
+    @include for-size(phone-large) {
+        margin-right: 10px;
+        background-color: map-get($color , c-item-background);
+
+    }
 }
 
 .cart__amounth {
@@ -15,8 +29,8 @@
     height: 14px;
     background-color: map-get($color , c-order-box);
     border-radius: 50%;
-    top: 5px;
-    right: 5px;
+    top: 7px;
+    left: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,4 +39,26 @@
 .cart__value {
     font-weight: 600;
     font-size: 8px;
+}
+
+.cart__desc-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: map-get($color , c-black-text);
+}
+
+.cart__desc-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: map-get($color , c-black-text);
+}
+
+.cart__desc {
+    display: none;
+
+    @include for-size(desktop) {
+        display: block;
+    }
 }

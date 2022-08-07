@@ -36,10 +36,20 @@
                 <img class="top-bar__icon" src="./src/assets/images/phone.svg" alt="contact">
                 <p class="top-bar__phone">1300 887 880</p>
             </div>
-            <div class="top-bar__login">
-                <img class="top-bar__sigin" src="./src/assets/images/sigin.svg" alt="signin">
-                <p class="login">Login/Register</p>
-            </div>          
+            <div class="top-bar__content">
+                <div class="top-bar__track">
+                    <img class="top-bar__sigin" src="./src/assets/images/track-order-icon.svg" alt="track order">
+                    <p class="login">Track Order</p>
+                </div>
+                <div class="top-bar__wish">
+                    <img class="top-bar__sigin" src="./src/assets/images/whishlist-icon.svg" alt="whislist">
+                    <p class="login">Wishlist</p>
+                </div>
+                <div class="top-bar__login">
+                    <img class="top-bar__sigin" src="./src/assets/images/sigin.svg" alt="signin">
+                    <p class="login">Login/Register</p>
+                </div> 
+            </div>                 
         </div>
 
         <div class="header-menu">
@@ -47,22 +57,116 @@
                 <img class="mobile-menu__burger" src="./src/assets/images/burger-menu.svg" alt="mobile-menu">
             </div>
             <div class="website-logo">
-                <img class="website-logo__img" src="./src/assets/images/website_logo.png" alt="logo">
-            </div>
+                <img class="website-logo__img-desktop" src="./src/assets/images/website_logo-desktop.png" alt="logo">
+            </div>          
+            <form class="search">
+                <div class="search__bar">
+                    <input type="text" placeholder="Search over 10,000+ Stocked product lines..." name="search" class="search-input">
+                    <div class="btn btn--search">search</div>
+                </div>
+            </form>
+            <div class="website-user">
+                <div class="website-user__content">
+                    <div class="website-user__img">
+                    <img src="./src/assets/images/user-icon.svg" alt="user">
+                    </div>
+                    <div class="website-user__desc">
+                    <p class="website-user__title">My Account</p>
+                    <p class="website-user__text">Login</p>
+                    </div>
+                </div>
+            </div>                   
             <div class="header-search">
                 <img class="header-search__img" src="./src/assets/images/search.svg" alt="search">
             </div>
             <div class="cart">
-                <a href="cart.html"><img class="cart__img" src="./src/assets/images/shopping-cart.svg" alt="cart"></a>
+                <a class="cart__link" href="cart.html">
+                    <img class="cart__img" src="./src/assets/images/shopping-cart.svg" alt="cart">
+                </a>
                 <div class="cart__amounth">
                     <div class="cart__value">0</div>
+                </div>
+                <div class="cart__desc">
+                    <p class="cart__desc-title">My cart</p>
+                    <p class="cart__desc-text">$0.00</p>
                 </div>
             </div>          
         </div>
 
         <div class="header-banner">
-            <img class="header-banner__img" src="./src/assets/images/delivery-truck.svg" alt="free shipping">
-            <h4 class="header-banner__text">Free Shipping Australia Wide</h4>
+            <div class="header-banner__wraper">
+                <div class="header-banner__menu">
+                    <div class="header-banner__menu-category">
+                        <img class="banner__menu-category-img" src="./src/assets/images/burger-menu-white.svg" alt="menu">
+                        <p>Shop By Category</p>
+                    </div>
+                    <div class="header-banner__menu-link">
+                        <p class="header-banner__menu-link-text">Home</p>
+                        <p class="header-banner__menu-link-text">References</p>
+                        <a class="header-banner__menu-link-text" href="Blog.html"><p>Blog</p></a>
+                        <a class="header-banner__menu-link-text" href="about-us.html"><p>About Us</p></a>
+                        <p class="header-banner__menu-link-text">Contact Us</p>
+                    </div>    
+                    <ul class="banner-menu">
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/actuators.svg" alt="actuators">
+                            <p class="banner-menu__text">Actuators</p>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/fittings.svg" alt="fittings">
+                            <p class="banner-menu__text">Fittings</p>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/flow.ind.svg" alt="flow Indicators">
+                            <p class="banner-menu__text">Flow Indicators</p>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/pneumatics.svg" alt="pneumatics">
+                            <p class="banner-menu__text">Pneumatics</p>
+                            <ul class="banner-menu-content">
+                                <li class="banner-menu__list banner-menu__list--sub"><p class="banner-menu-content__text">Air Guns</p></li>
+                                <li class="banner-menu__list banner-menu__list--sub"><p class="banner-menu-content__text">Air Service</p></li>
+                                <li class="banner-menu__list banner-menu__list--sub"><p class="banner-menu-content__text">Ancillary Pneumatic Valves</p></li>
+                                <li class="banner-menu__list banner-menu__list--sub"><p class="banner-menu-content__text">Cylinders</p></li>
+                                <li class="banner-menu__list banner-menu__list--sub"><p class="banner-menu-content__text">Manual Valves</p></li>
+                                <li class="banner-menu__list banner-menu__list--sub"><p class="banner-menu-content__text">Pilot Valves</p></li>
+                            </ul>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/guages.svg" alt="guages">
+                            <p class="banner-menu__text">Gauges</p>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/spares.svg" alt="spares">
+                            <p class="banner-menu__text">Spares</p>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/steam.trap.svg" alt="steam traps">
+                            <p class="banner-menu__text">Steam Traps</p>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/stainers.svg" alt="strainers">
+                            <p class="banner-menu__text">Strainers</p>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/switches.svg" alt="switches">
+                            <p class="banner-menu__text">Switches</p>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/tubing.svg" alt="tubing">
+                            <p class="banner-menu__text">Tubing</p>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/valves.svg" alt="valves">
+                            <p class="banner-menu__text">Valves</p>
+                        </li>
+                    </ul>              
+                </div>
+                <div class="header-banner__content">
+                    <img class="header-banner__img" src="./src/assets/images/delivery-truck.svg" alt="free shipping">
+                    <h4 class="header-banner__text">Free Shipping Australia Wide</h4>
+                </div>               
+            </div>           
         </div>      
     </header>    
 
@@ -70,9 +174,11 @@
         <div class="hero">
             <div class="banner">
                 <div class="banner__content">
-                    <h1 class="banner__title">welcome to valvesonline</h1>
-                    <p class="banner__desc">All your valving needs at the click of a button</p>
-                    <div class="btn btn--cta">Shop Now</div>
+                    <div class="banner__content-desc">
+                        <h1 class="banner__title">welcome to valvesonline</h1>
+                        <p class="banner__desc">All your valving needs at the click of a button</p>
+                        <div class="btn btn--cta">Shop Now</div>
+                    </div>
                     <ul class="banner-list">
                         <li class="banner-list__item">                       
                             <img src="./src/assets/images/quality-icon.svg" alt="quality-icon">                     
@@ -101,111 +207,137 @@
                 </div>               
             </div>
         </div>
-        <section class="popular-category">
-            <h2 class="section-title">Popular Categories</h2>
-            <div class="my-slider list">               
-                <div class="list__item">
-                    <div class="category">
-                        <img class="category__img" src="./src/assets/images/products/solenoid-valves.png" alt="valves">
-                        <p class="category__title">Solenoid Valves</p>
+        <section>
+            <div class="slider-wraper">
+                <h2 class="section-title section-title--popular-category">Popular Categories</h2>
+                <div class="my-slider list">               
+                    <div class="list__item">
+                        <div class="category">
+                            <img class="category__img" src="./src/assets/images/category-desktop/solenoid-valve.png" alt="valves">
+                            <p class="category__title">Solenoid Valves</p>
+                            <div class="btn btn--shop">Shop Now</div>                       
+                        </div>
                     </div>
-                </div>
-                <div class="list__item">
-                    <div class="category">
-                        <img class="category__img" src="./src/assets/images/bdf.png" alt="butterfly valve">
-                        <p class="category__title">Butterfly Valve</p>
+                    <div class="list__item">
+                        <div class="category">
+                            <img class="category__img" src="./src/assets/images/category-desktop/butterfly-valve-desktop.png" alt="butterfly valve">
+                            <p class="category__title">Butterfly Valves</p>
+                            <div class="btn btn--shop">Shop Now</div>  
+                        </div>
                     </div>
-                </div>
-                <div class="list__item">
-                    <div class="category">
-                        <img class="category__img" src="./src/assets/images/products/solenoid-valves.png" alt="valves">
-                        <p class="category__title">Solenoid Valves</p>
+                    <div class="list__item">
+                        <div class="category">
+                            <img class="category__img" src="./src/assets/images/category-desktop/ball-valves.png" alt="valves">
+                            <p class="category__title">Ball Valves</p>
+                            <div class="btn btn--shop">Shop Now</div>  
+                        </div>
+                    </div>
+                    <div class="list__item">
+                        <div class="category">
+                            <img class="category__img" src="./src/assets/images/category-desktop/check-valve.png" alt="valves">
+                            <p class="category__title">Check Valves</p>
+                            <div class="btn btn--shop">Shop Now</div>  
+                        </div>
+                    </div>
+                    <div class="list__item">
+                        <div class="category">
+                            <img class="category__img" src="./src/assets/images/category-desktop/globe-valve.png" alt="valves">
+                            <p class="category__title">Globe Valves</p>
+                            <div class="btn btn--shop">Shop Now</div>  
+                        </div>
+                    </div>
+                    <div class="list__item">
+                        <div class="category">
+                            <img class="category__img" src="./src/assets/images/category-desktop/gate valves.png" alt="valves">
+                            <p class="category__title">Gate Valves</p>
+                            <div class="btn btn--shop">Shop Now</div>  
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="shop-by-category">
-            <h2 class="section-title">Shop By Category</h2>
+        <section class="wraper-categort-list">
+            <h2 class="section-title  section-title--shop-by-category">Shop By Category</h2>
             <ul class="category-list">
                 <li class="category-list__item">
-                    <img src="./src/assets/images/products/actuators.png" alt="actuators">
+                    <img class="category-list__img" src="./src/assets/images/products/actuators.png" alt="actuators">
                     <div class="category-list__content">
                         <p class="category-list__content-title">Actuators</p>
                         <div class="btn btn--link"><a href="category.html">Shop All</a></div>
                     </div>                    
                 </li>
                 <li class="category-list__item">
-                    <img src="./src/assets/images/products/fittings.png" alt="fittings">
+                    <img class="category-list__img" src="./src/assets/images/products/fittings.png" alt="fittings">
                     <div class="category-list__content">
                         <p class="category-list__content-title">Fittings</p>
                         <div class="btn btn--link"><a href="category.html">Shop All</a></div>
                     </div>                  
                 </li>
                 <li class="category-list__item">
-                    <img src="./src/assets/images/products/flow-ind.png" alt="flow-ind">
+                    <img class="category-list__img" src="./src/assets/images/products/flow-ind.png" alt="flow-ind">
                     <div class="category-list__content">
                         <p class="category-list__content-title">Flow Ind.</p>
                         <div class="btn btn--link"><a href="category.html">Shop All</a></div>
                     </div>                 
                 </li>
                 <li class="category-list__item">
-                    <img src="./src/assets/images/products/pneumatics.png" alt="pneumatics">
+                    <img class="category-list__img" src="./src/assets/images/products/pneumatics.png" alt="pneumatics">
                     <div class="category-list__content">
                         <p class="category-list__content-title">Pneumatics</p>
                         <div class="btn btn--link"><a href="category.html">Shop All</a></div>
                     </div>                 
                 </li>
                 <li class="category-list__item">
-                    <img src="./src/assets/images/products/guages.png" alt="guages">
+                    <img class="category-list__img" src="./src/assets/images/products/guages.png" alt="guages">
                     <div class="category-list__content">
                         <p class="category-list__content-title">Guages</p>
                         <div class="btn btn--link"><a href="category.html">Shop All</a></div>
                     </div>                   
                 </li>
                 <li class="category-list__item">
-                    <img src="./src/assets/images/products/spares.png" alt="spares">
+                    <img class="category-list__img" src="./src/assets/images/products/spares.png" alt="spares">
                     <div class="category-list__content">
                         <p class="category-list__content-title">Spares</p>
                         <div class="btn btn--link"><a href="category.html">Shop All</a></div>
                     </div>                   
                 </li>
                 <li class="category-list__item">
-                    <img src="./src/assets/images/products/steam-trap.png" alt="steam trap">
+                    <img class="category-list__img" src="./src/assets/images/products/steam-trap.png" alt="steam trap">
                     <div class="category-list__content">
                         <p class="category-list__content-title">Steam Trap</p>
                         <div class="btn btn--link"><a href="category.html">Shop All</a></div>
                     </div>                  
                 </li>
                 <li class="category-list__item">
-                    <img src="./src/assets/images/products/strainers.png" alt="strainers">
+                    <img class="category-list__img" src="./src/assets/images/products/strainers.png" alt="strainers">
                     <div class="category-list__content">
                           <p class="category-list__content-title">Strainers</p>
                     <div class="btn btn--link"><a href="category.html">Shop All</a></div>
                     </div>                
                 </li>
                 <li class="category-list__item">
-                    <img src="./src/assets/images/products/switches.png" alt="switches">
+                    <img class="category-list__img" src="./src/assets/images/products/switches.png" alt="switches">
                     <div class="category-list__content">
                         <p class="category-list__content-title">Switches</p>
                         <div class="btn btn--link"><a href="category.html">Shop All</a></div>
                     </div>                  
                 </li>
                 <li class="category-list__item">
-                    <img src="./src/assets/images/products/tubing.png" alt="tubing">
+                    <img class="category-list__img" src="./src/assets/images/products/tubing.png" alt="tubing">
                     <div class="category-list__content">
                         <p class="category-list__content-title">Tubing</p>
                         <div class="btn btn--link"><a href="category.html">Shop All</a></div>
                     </div>               
                 </li>
                 <li class="category-list__item">
-                    <img src="./src/assets/images/products/valve.png" alt="valve">
+                    <img class="category-list__img" src="./src/assets/images/products/valve.png" alt="valve">
                     <div class="category-list__content">
                         <p class="category-list__content-title">Valves</p>
                         <div class="btn btn--link"><a href="category.html">Shop All</a></div>
                     </div>                 
                 </li>                                                             
                 <li class="category-list__item">
-                    <img src="./src/assets/images/products/new-in.png" alt="new-in">
+                    <img class="category-list__img" src="./src/assets/images/products/new-in.png" alt="new-in">
                     <div class="category-list__content">
                         <p class="category-list__content-title">New In</p>
                         <div class="btn btn--link"><a href="category.html">Shop All</a></div>
@@ -213,107 +345,122 @@
                 </li>
             </ul>
         </section>
-        <section class="company-desc">
-            <div class="company-desc__title">
-                <p>Welcome to Valves Online - all of your valving needs at the click of your finger</p>
-            </div>
-            <div class="company-desc__text">
-                <p>When it comes to control valves, Process Systems has been leading the pack in Australia for more than 30 years. Aimed at providing the best product and the best service at the best price, Process Systems are the number one choice for valves in the country...</p>
-            </div>
-
-            <div class="banner banner--small">
-                <div class="banner__content banner__content--small">
-                    <div class="banner__content-title">
-                        <h2 class="content-title__small">Free Shipping Australia Wide</h2>
-                    </div>
-                    <div class="content-text__small">
-                        <p>We offer free delivery to all Australian regions and our assistance with any other related requirements</p>
-                    </div>
-                </div>             
-            </div>
+        <section>
+            <div class="company-desc">
+                <div class="company-desc__title">
+                    <p>Welcome to Valves Online - all of your valving needs at the click of your finger</p>
+                </div>
+                <div class="company-desc__text">
+                    <p>When it comes to control valves, Process Systems has been leading the pack in Australia for more than 30 years. Aimed at providing the best product and the best service at the best price, Process Systems are the number one choice for valves in the country...</p>
+                </div>
+                <div class="banner banner--small">
+                    <div class="banner__content banner__content--small">
+                        <div class="banner__content-title">
+                            <h2 class="content-title__small">Free Shipping Australia Wide</h2>
+                        </div>
+                        <div class="content-text__small">
+                            <p>We offer free delivery to all Australian regions and our assistance with any other related requirements</p>
+                        </div>
+                    </div>             
+                </div>
+            </div>           
         </section>
         <section>
             <div class="accordion-list">
-                <div class="accordion">
-                    <div class="accordion__icon">
-                        <img src="./src/assets/images/accordion-img/solenoid-valves-acc.svg" alt="solenoid valves">
+                <div class="accordion-list__wrapper">
+                    <div class="accordion">
+                        <div class="accordion__icon">
+                            <img src="./src/assets/images/accordion-img/solenoid-valves-acc.svg" alt="solenoid valves">
+                        </div>
+                        <p class="accordion__title">Solenoid Valves</p>
+                    </div>               
+                    <div class="accordion-panel">
+                        <p>Large range of solenoid valves including direct acting, differential, high pressure, high temperature, explosion proof along with the various body material options available. Applications include solenoid valves for water, steam, chemicals, high pressure...</p>
                     </div>
-                    <p class="accordion__title">Solenoid Valves</p>
-                </div>               
-                <div class="accordion-panel">
-                    <p>Large range of solenoid valves including direct acting, differential, high pressure, high temperature, explosion proof along with the various body material options available. Applications include solenoid valves for water, steam, chemicals, high pressure...</p>
                 </div>
 
-                <div class="accordion">
-                    <div class="accordion__icon">
-                        <img src="./src/assets/images/accordion-img/butterfly-valves-acc.svg" alt="butterfly valves">
+                <div class="accordion-list__wrapper">
+                    <div class="accordion">
+                        <div class="accordion__icon">
+                            <img src="./src/assets/images/accordion-img/butterfly-valves-acc.svg" alt="butterfly valves">
+                        </div>
+                        <p class="accordion__title">Butterfly Valves</p>
+                    </div>               
+                    <div class="accordion-panel">
+                        <p>Large range of solenoid valves including direct acting, differential, high pressure, high temperature, explosion proof along with the various body material options available. Applications include solenoid valves for water, steam, chemicals, high pressure...</p>
                     </div>
-                    <p class="accordion__title">Butterfly Valves</p>
-                </div>               
-                <div class="accordion-panel">
-                    <p>Large range of solenoid valves including direct acting, differential, high pressure, high temperature, explosion proof along with the various body material options available. Applications include solenoid valves for water, steam, chemicals, high pressure...</p>
                 </div>
 
-                <div class="accordion">
-                    <div class="accordion__icon">
-                        <img src="./src/assets/images/accordion-img/ball-valves-acc.svg" alt="ball valves">
+                <div class="accordion-list__wrapper">
+                    <div class="accordion">
+                        <div class="accordion__icon">
+                            <img src="./src/assets/images/accordion-img/ball-valves-acc.svg" alt="ball valves">
+                        </div>
+                        <p class="accordion__title">Ball Valves</p>
+                    </div>               
+                    <div class="accordion-panel">
+                        <p>Large range of solenoid valves including direct acting, differential, high pressure, high temperature, explosion proof along with the various body material options available. Applications include solenoid valves for water, steam, chemicals, high pressure...</p>
                     </div>
-                    <p class="accordion__title">Ball Valves</p>
-                </div>               
-                <div class="accordion-panel">
-                    <p>Large range of solenoid valves including direct acting, differential, high pressure, high temperature, explosion proof along with the various body material options available. Applications include solenoid valves for water, steam, chemicals, high pressure...</p>
                 </div>
 
-                <div class="accordion">
-                    <div class="accordion__icon">
-                        <img src="./src/assets/images/accordion-img/check-valves-acc.svg" alt="check valves">
+                <div class="accordion-list__wrapper">
+                    <div class="accordion">
+                        <div class="accordion__icon">
+                            <img src="./src/assets/images/accordion-img/check-valves-acc.svg" alt="check valves">
+                        </div>
+                        <p class="accordion__title">Check Valves</p>
+                    </div>               
+                    <div class="accordion-panel">
+                        <p>Large range of solenoid valves including direct acting, differential, high pressure, high temperature, explosion proof along with the various body material options available. Applications include solenoid valves for water, steam, chemicals, high pressure...</p>
                     </div>
-                    <p class="accordion__title">Check Valves</p>
-                </div>               
-                <div class="accordion-panel">
-                    <p>Large range of solenoid valves including direct acting, differential, high pressure, high temperature, explosion proof along with the various body material options available. Applications include solenoid valves for water, steam, chemicals, high pressure...</p>
                 </div>
 
-                <div class="accordion">
-                    <div class="accordion__icon">
-                        <img src="./src/assets/images/accordion-img/globe-valves-acc.svg" alt="globe valves">
+                <div class="accordion-list__wrapper">
+                    <div class="accordion">
+                        <div class="accordion__icon">
+                            <img src="./src/assets/images/accordion-img/globe-valves-acc.svg" alt="globe valves">
+                        </div>
+                        <p class="accordion__title">Globe Valves</p>
+                    </div>               
+                    <div class="accordion-panel">
+                        <p>Large range of solenoid valves including direct acting, differential, high pressure, high temperature, explosion proof along with the various body material options available. Applications include solenoid valves for water, steam, chemicals, high pressure...</p>
                     </div>
-                    <p class="accordion__title">Globe Valves</p>
-                </div>               
-                <div class="accordion-panel">
-                    <p>Large range of solenoid valves including direct acting, differential, high pressure, high temperature, explosion proof along with the various body material options available. Applications include solenoid valves for water, steam, chemicals, high pressure...</p>
                 </div>
 
-                <div class="accordion">
-                    <div class="accordion__icon">
-                        <img src="./src/assets/images/accordion-img/gate-valves-acc.svg" alt="gate valves">
+                <div class="accordion-list__wrapper">
+                    <div class="accordion">
+                        <div class="accordion__icon">
+                            <img src="./src/assets/images/accordion-img/gate-valves-acc.svg" alt="gate valves">
+                        </div>
+                        <p class="accordion__title">Gate Valves</p>
+                    </div>               
+                    <div class="accordion-panel">
+                        <p>Large range of solenoid valves including direct acting, differential, high pressure, high temperature, explosion proof along with the various body material options available. Applications include solenoid valves for water, steam, chemicals, high pressure...</p>
                     </div>
-                    <p class="accordion__title">Gate Valves</p>
-                </div>               
-                <div class="accordion-panel">
-                    <p>Large range of solenoid valves including direct acting, differential, high pressure, high temperature, explosion proof along with the various body material options available. Applications include solenoid valves for water, steam, chemicals, high pressure...</p>
                 </div>
             </div>
         </section>
         <section>
-            <div class="help-references">
-                <div class="help__title">
-                    <h2>References</h2>
+            <div class="reference">
+                <div class="help-references">
+                    <div class="help__title">
+                        <h2>References</h2>
+                    </div>
+                    <div class="help__desc">
+                        <p>Helpful range of references including flange tables, chemical compatibility, flow rates, sizing charts, thread tables, ISO mounting configurations, valve terminology and much more. If you’re having any troubles, doubts or just looking for an additional info, check out our references.</p>
+                    </div>
+                    <button class="btn btn--blue"><h4>View Now</h4></button>
                 </div>
-                <div class="help__desc">
-                    <p>Helpful range of references including flange tables, chemical compatibility, flow rates, sizing charts, thread tables, ISO mounting configurations, valve terminology and much more. If you’re having any troubles, doubts or just looking for an additional info, check out our references.</p>
+                <div class="help">
+                    <div class="help__title">
+                        <h2>Buyers Guide</h2>
+                    </div>
+                    <div class="help__desc">
+                        <p>First time shopping with us or dealing with valves in general? We got you covered. ValvesOnline has made a special, free PDF brochure for our users. It contains all the neccessary information and guidelines for buying a perfect valve or whatever else from our wide range of products.</p>
+                    </div>
+                    <button class="btn btn--blue"><h4>View Now</h4></button>
                 </div>
-                <button class="btn btn--blue"><h4>View Now</h4></button>
-            </div>
-            <div class="help">
-                <div class="help__title">
-                    <h2>Buyers Guide</h2>
-                </div>
-                <div class="help__desc">
-                    <p>First time shopping with us or dealing with valves in general? We got you covered. ValvesOnline has made a special, free PDF brochure for our users. It contains all the neccessary information and guidelines for buying a perfect valve or whatever else from our wide range of products.</p>
-                </div>
-                <button class="btn btn--blue"><h4>View Now</h4></button>
-            </div>
+            </div>           
         </section>
         <section>
             <div class="company-info">
@@ -329,7 +476,7 @@
                 <div class="banner banner__company">
                     <div class="banner__content banner__content--info">
                         <ul class="banner-list banner-list--info">
-                            <li class="banner-list__item">                       
+                            <li class="banner-list__item banner-list__item--bottom">                       
                                 <img src="./src/assets/images/quality-icon.svg" alt="quality-icon">                     
                                 <div class="banner-list__content">
                                     <div class="banner-list__title">quality</div>
@@ -337,7 +484,7 @@
                                 </div>                       
                             </li>
                         
-                            <li class="banner-list__item">                       
+                            <li class="banner-list__item banner-list__item--bottom">                       
                                 <img src="./src/assets/images/warranty-icon.svg" alt="warranty-icon">
                                 <div class="banner-list__content">
                                     <div class="banner-list__title">full</div>
@@ -345,7 +492,7 @@
                                 </div>                      
                             </li>
         
-                            <li class="banner-list__item">
+                            <li class="banner-list__item banner-list__item--bottom">
                                 <img src="./src/assets/images/delivery-truck-blue.svg" alt="delivery truck">
                                 <div class="banner-list__content">
                                     <div class="banner-list__title">free</div>
@@ -353,7 +500,7 @@
                                 </div>                       
                             </li>
                         
-                            <li class="banner-list__item">
+                            <li class="banner-list__item banner-list__item--bottom">
                                 <img src="./src/assets/images/despatch-icon.svg" alt="despatch-icon">
                                 <div class="banner-list__content">
                                     <div class="banner-list__title">same day</div>
@@ -385,67 +532,63 @@
             </div>
             <div class="footer-body">
                 <div class="accordion-list accordion-list--footer">
-                    <div class="accordion accordion--line-footer">
-                        <p class="accordion__title accordion__title--footer">about us</p>
-                    </div>               
-                    <div class="accordion-panel accordion-panel--foter">
-                        <ul class="nav-list nav-list--footer">
-                            <li class="nav-list__item"><a href="about-us.html"><h4>About Us</h4></a></li>
-                            <li class="nav-list__item"><a href="blog.html"><h4>Our blog</h4></a></li>
-                            <li class="nav-list__item"><a><h4>Contact Us</h4></a></li>
-                            <li class="nav-list__item"><a href="premises.html"><h4>Premises</h4></a></li>
-                            <li class="nav-list__item"><a href="projects.html"><h4>Project</h4></a></li>
-                            <li class="nav-list__item"><a href="product-warranty.html"><h4>Warranty & Warning</h4></a></li>
-                            <li class="nav-list__item"><a href="youtube-videos.html"><h4>Youtube videos</h4></a></li>
-                        </ul>
-                    </div>
-    
-                    <div class="accordion accordion--line-footer">
-                        <p class="accordion__title accordion__title--footer">service</p>
-                    </div>               
-                    <div class="accordion-panel accordion-panel--foter">
-                        <ul class="nav-list nav-list--footer">
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>About Us</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Our blog</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Contact Us</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Premises</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Project</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Warranty & Warning</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Youtube videos</h4></a></li>
-                        </ul>
-                    </div>
-    
-                    <div class="accordion accordion--line-footer">
-                        <p class="accordion__title accordion__title--footer">information</p>
-                    </div>               
-                    <div class="accordion-panel accordion-panel--foter">
-                        <ul class="nav-list nav-list--footer">
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>About Us</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Our blog</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Contact Us</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Premises</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Project</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Warranty & Warning</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Youtube videos</h4></a></li>
-                        </ul>                    
-                    </div>
-    
-                    <div class="accordion accordion--line-footer">
-                        <p class="accordion__title accordion__title--footer">contact</p>
-                    </div>               
-                    <div class="accordion-panel accordion-panel--foter">
-                        <ul class="nav-list nav-list--footer">
+                    <div class="accordion-list__wrapper accordion-list__wrapper--footer">
+                        <div class="accordion accordion--line-footer">
+                            <p class="accordion__title accordion__title--footer">about us</p>
+                        </div> 
+                        <div class="accordion-panel accordion-panel--foter">
                             <ul class="nav-list nav-list--footer">
-                                <li class="nav-list__item nav-list__item--footer"><a><h4>About Us</h4></a></li>
-                                <li class="nav-list__item nav-list__item--footer"><a><h4>Our blog</h4></a></li>
-                                <li class="nav-list__item nav-list__item--footer"><a><h4>Contact Us</h4></a></li>
-                                <li class="nav-list__item nav-list__item--footer"><a><h4>Premises</h4></a></li>
-                                <li class="nav-list__item nav-list__item--footer"><a><h4>Project</h4></a></li>
-                                <li class="nav-list__item nav-list__item--footer"><a><h4>Warranty & Warning</h4></a></li>
-                                <li class="nav-list__item nav-list__item--footer"><a><h4>Youtube videos</h4></a></li>
+                                <li class="nav-list__item"><a href="about-us.html"><h4>About Us</h4></a></li>
+                                <li class="nav-list__item"><a href="blog.html"><h4>Our blog</h4></a></li>
+                                <li class="nav-list__item"><a><h4>Contact Us</h4></a></li>
+                                <li class="nav-list__item"><a href="premises.html"><h4>Premises</h4></a></li>
+                                <li class="nav-list__item"><a href="projects.html"><h4>Project</h4></a></li>
+                                <li class="nav-list__item"><a href="product-warranty.html"><h4>Warranty & Warning</h4></a></li>
+                                <li class="nav-list__item"><a href="youtube-videos.html"><h4>Youtube videos</h4></a></li>
                             </ul>
-                        </ul>
+                        </div>
                     </div>
+                                                   
+                    <div class="accordion-list__wrapper accordion-list__wrapper--footer">
+                        <div class="accordion accordion--line-footer">
+                            <p class="accordion__title accordion__title--footer">service</p>
+                        </div>               
+                        <div class="accordion-panel accordion-panel--foter">
+                            <ul class="nav-list nav-list--footer">
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>My Account</h4></a></li>
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Track Order</h4></a></li>
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Resolution Centre</h4></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-list__wrapper accordion-list__wrapper--footer">
+                        <div class="accordion accordion--line-footer">
+                            <p class="accordion__title accordion__title--footer">information</p>
+                        </div>               
+                        <div class="accordion-panel accordion-panel--foter">
+                            <ul class="nav-list nav-list--footer">
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Terms of Use</h4></a></li>
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Privacy Policy</h4></a></li>
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Returns Policy</h4></a></li>
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Security Policy</h4></a></li>
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Product Warranty & Warning</h4></a></li>
+                            </ul>                    
+                        </div>
+                    </div>
+                        
+                    <div class="accordion-list__wrapper accordion-list__wrapper--footer">
+                        <div class="accordion accordion--line-footer">
+                            <p class="accordion__title accordion__title--footer">contact</p>
+                        </div>               
+                        <div class="accordion-panel accordion-panel--foter">
+                                <ul class="nav-list nav-list--footer">
+                                    <li class="nav-list__item nav-list__item--footer nav-list__item--footer-contact-phone"><a><h4>1300 887 880</h4></a></li>
+                                    <li class="nav-list__item nav-list__item--footer nav-list__item--footer-contact-mail"><a><h4>sales@processsystems.com.au</h4></a></li>
+                                    <li class="nav-list__item nav-list__item--footer nav-list__item--footer-contact-map"><a><h4>4/308 New Cleveland Road, TINGALPA, QLD, 4173</h4></a></li>
+                                </ul>
+                        </div>
+                    </div>                   
                 </div>
                 <div class="footer-body__btn">
                     <a href="#main">
@@ -455,15 +598,15 @@
                     </a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p class="footer-bottom__title">Copyright © 2022 Process Systems</p>
-                <div class="footer-bottom__icon">
-                    <img src="./src/assets/images/visa.svg" alt="visa">
-                    <img src="./src/assets/images/mastercard.svg" alt="mastercard">
-                    <img src="./src/assets/images/paypal.svg" alt="paypal">
-                </div>
+        </footer> 
+        <div class="footer-bottom">
+            <p class="footer-bottom__title">Copyright © 2022 Process Systems</p>
+            <div class="footer-bottom__icon">
+                <img src="./src/assets/images/visa.svg" alt="visa">
+                <img src="./src/assets/images/mastercard.svg" alt="mastercard">
+                <img src="./src/assets/images/paypal.svg" alt="paypal">
             </div>
-        </footer>     
+        </div>    
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="dist/js/app.js"></script>
