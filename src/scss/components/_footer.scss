@@ -54,6 +54,7 @@ footer {
 
     @include for-size(desktop-large) {
         border-bottom: 0;
+        padding: 0;
     }
 }
 

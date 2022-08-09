@@ -15,7 +15,7 @@
     margin-bottom: 45px;
 
     @include for-size(phone-large) {
-        margin-bottom: 37px;
+        margin-bottom: 0;
         margin-right: 26px;
     }
 }
