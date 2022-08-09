@@ -14,6 +14,14 @@
     align-items: center;
     justify-content: space-between;
     padding: 9px 20px 10px 20px;
+
+    @include for-size(desktop) {
+        padding: 9px 0 10px 0;
+    }
+
+    @include for-size(desktop-extra-large) {
+        padding: 9px 0 10px 0;
+    }
 }
 
 .top-bar__content {
@@ -75,6 +83,10 @@
     transition: all .2s ease;
     padding-left: 20px;
     padding-right: 20px;
+
+    .mobile-menu {
+        display: block;
+    }
 }
 
 .mobile-menu, .website-logo, .search, .shopping-cart {
@@ -93,11 +105,28 @@
     }
 }
 
+.website-logo__img-desktop {
+
+    @include for-size(tablet) {
+        margin-left: 37px;
+    }
+
+    @include for-size(desktop) {
+        margin-left: 0;
+    }
+
+    @include for-size(desktop-extra-large) {
+        margin-left: 0;
+    }
+
+   
+}
+
 .mobile-menu {
     cursor: pointer;
     padding: 12.66px 11px;
 
-    @include for-size(phone-large) {
+    @include for-size(desktop) {
         display: none;
     }
 }

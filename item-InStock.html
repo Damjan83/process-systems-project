@@ -30,34 +30,26 @@
                 <li class="nav-list__item nav-icon-phone"><a>1300 887 880</a></li>
             </ul>
         </div>
-        <div class="nav nav--enquiry">
-            <div class="nav__header">
-                <h1 class="nav__title">Enquiry</h1>
-                <img class="close-icon close-icon--enquiry" src="./src/assets/images/close-icon.svg" alt="close-icon">
-            </div>
-            <form id="contactForm" class="form">
-                <p class="form__name">Name</p>
-                <input class="form__input form__input-name" type="text" id="fname" placeholder="Type your name here..." required>
-                <!--<span class="form__error form__error-name">Please enter a valid name</span>-->
-                <p class="form__email">Email Address</p>
-                <input class="form__input form__input-email" type="email" id="email" placeholder="Type your email here..." required>
-                <!--<span class="form__error form__error-email">Please enter a valid email</span>-->
-                <p class="form__message">Message:</p>
-                <textarea class="sub" id="subject" name="subject" placeholder="Type your message here..." maxlength="260" required></textarea>
-                <button class="btn btn--submit" type="submit">
-                    <p class="btn--submit-text">send an enquiry</p></button>
-              </form>
-        </div>
 
         <div class="top-bar">
             <div class="top-bar__contact">
                 <img class="top-bar__icon" src="./src/assets/images/phone.svg" alt="contact">
                 <p class="top-bar__phone">1300 887 880</p>
             </div>
-            <div class="top-bar__login">
-                <img class="top-bar__sigin" src="./src/assets/images/sigin.svg" alt="signin">
-                <p class="login">Login/Register</p>
-            </div>          
+            <div class="top-bar__content">
+                <div class="top-bar__track">
+                    <img class="top-bar__sigin" src="./src/assets/images/track-order-icon.svg" alt="track order">
+                    <p class="login">Track Order</p>
+                </div>
+                <div class="top-bar__wish">
+                    <img class="top-bar__sigin" src="./src/assets/images/whishlist-icon.svg" alt="whislist">
+                    <p class="login">Wishlist</p>
+                </div>
+                <div class="top-bar__login">
+                    <img class="top-bar__sigin" src="./src/assets/images/sigin.svg" alt="signin">
+                    <p class="login">Login/Register</p>
+                </div> 
+            </div>                 
         </div>
 
         <div class="header-menu">
@@ -65,24 +57,119 @@
                 <img class="mobile-menu__burger" src="./src/assets/images/burger-menu.svg" alt="mobile-menu">
             </div>
             <div class="website-logo">
-                <img class="website-logo__img" src="./src/assets/images/website_logo.png" alt="logo">
-            </div>
+                <img class="website-logo__img-desktop" src="./src/assets/images/website_logo-desktop.png" alt="logo">
+            </div>          
+            <form class="search">
+                <div class="search__bar">
+                    <input type="text" placeholder="Search over 10,000+ Stocked product lines..." name="search" class="search-input">
+                    <div class="btn btn--search">search</div>
+                </div>
+            </form>
+            <div class="website-user">
+                <div class="website-user__content">
+                    <div class="website-user__img">
+                    <img src="./src/assets/images/user-icon.svg" alt="user">
+                    </div>
+                    <div class="website-user__desc">
+                    <p class="website-user__title">My Account</p>
+                    <p class="website-user__text">Login</p>
+                    </div>
+                </div>
+            </div>                   
             <div class="header-search">
                 <img class="header-search__img" src="./src/assets/images/search.svg" alt="search">
             </div>
             <div class="cart">
-                <a href="cart.html"><img class="cart__img" src="./src/assets/images/shopping-cart.svg" alt="cart"></a>
+                <a class="cart__link" href="cart.html">
+                    <img class="cart__img" src="./src/assets/images/shopping-cart.svg" alt="cart">
+                </a>
                 <div class="cart__amounth">
                     <div class="cart__value">0</div>
+                </div>
+                <div class="cart__desc">
+                    <p class="cart__desc-title">My cart</p>
+                    <p class="cart__desc-text">$0.00</p>
                 </div>
             </div>          
         </div>
 
         <div class="header-banner">
-            <img class="header-banner__img" src="./src/assets/images/delivery-truck.svg" alt="free shipping">
-            <h4 class="header-banner__text">Free Shipping Australia Wide</h4>
+            <div class="header-banner__wraper">
+                <div class="header-banner__menu">
+                    <div class="header-banner__menu-category">
+                        <img class="banner__menu-category-img" src="./src/assets/images/burger-menu-white.svg" alt="menu">
+                        <p>Shop By Category</p>
+                    </div>
+                    <div class="header-banner__menu-link">
+                        <p class="header-banner__menu-link-text">Home</p>
+                        <p class="header-banner__menu-link-text">References</p>
+                        <a class="header-banner__menu-link-text" href="Blog.html"><p>Blog</p></a>
+                        <a class="header-banner__menu-link-text" href="about-us.html"><p>About Us</p></a>
+                        <p class="header-banner__menu-link-text">Contact Us</p>
+                    </div>    
+                    <ul class="banner-menu">
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/actuators.svg" alt="actuators">
+                            <p class="banner-menu__text">Actuators</p>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/fittings.svg" alt="fittings">
+                            <p class="banner-menu__text">Fittings</p>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/flow.ind.svg" alt="flow Indicators">
+                            <p class="banner-menu__text">Flow Indicators</p>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/pneumatics.svg" alt="pneumatics">
+                            <p class="banner-menu__text">Pneumatics</p>
+                            <ul class="banner-menu-content">
+                                <li class="banner-menu__list banner-menu__list--sub"><p class="banner-menu-content__text">Air Guns</p></li>
+                                <li class="banner-menu__list banner-menu__list--sub"><p class="banner-menu-content__text">Air Service</p></li>
+                                <li class="banner-menu__list banner-menu__list--sub"><p class="banner-menu-content__text">Ancillary Pneumatic Valves</p></li>
+                                <li class="banner-menu__list banner-menu__list--sub"><p class="banner-menu-content__text">Cylinders</p></li>
+                                <li class="banner-menu__list banner-menu__list--sub"><p class="banner-menu-content__text">Manual Valves</p></li>
+                                <li class="banner-menu__list banner-menu__list--sub"><p class="banner-menu-content__text">Pilot Valves</p></li>
+                            </ul>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/guages.svg" alt="guages">
+                            <p class="banner-menu__text">Gauges</p>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/spares.svg" alt="spares">
+                            <p class="banner-menu__text">Spares</p>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/steam.trap.svg" alt="steam traps">
+                            <p class="banner-menu__text">Steam Traps</p>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/stainers.svg" alt="strainers">
+                            <p class="banner-menu__text">Strainers</p>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/switches.svg" alt="switches">
+                            <p class="banner-menu__text">Switches</p>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/tubing.svg" alt="tubing">
+                            <p class="banner-menu__text">Tubing</p>
+                        </li>
+                        <li class="banner-menu__list">
+                            <img class="banner-menu__img" src="./src/assets/images/category-img-desktop-bw/valves.svg" alt="valves">
+                            <p class="banner-menu__text">Valves</p>
+                        </li>
+                    </ul>              
+                </div>
+                <div class="header-banner__content">
+                    <img class="header-banner__img" src="./src/assets/images/delivery-truck.svg" alt="free shipping">
+                    <h4 class="header-banner__text">Free Shipping Australia Wide</h4>
+                </div>               
+            </div>           
         </div>      
-    </header> 
+    </header>
+    
     <main class="wraper">
         <section>
             <div class="page-nav">
@@ -442,7 +529,7 @@
                 <img src="./src/assets/images/website_logo-footer.png" alt="website logo">
                 <h4 class="footer-top__text">At the forefront of the process control industry within Australia and the Pacific region since 1989.</h4>
                 <div class="footer-follow-us">
-                    <div class="follow-us__text"><h4>Follow us:</h4></div>
+                    <div class="footer-follow-us__text"><h4>Follow us:</h4></div>
                     <a href="https://twiter.com"><img class="follow-us__icon" src="./src/assets/images/twiter.png" alt="twiter"></a>
                     <a href="https://linkedin.com"><img class="follow-us__icon" src="./src/assets/images/linkedin.png" alt="linkedin"></a>
                     <a href="https://youtube.com"><img class="follow-us__icon" src="./src/assets/images/youtube.png" alt="youtube"></a>
@@ -455,67 +542,63 @@
             </div>
             <div class="footer-body">
                 <div class="accordion-list accordion-list--footer">
-                    <div class="accordion accordion--line-footer">
-                        <p class="accordion__title accordion__title--footer">about us</p>
-                    </div>               
-                    <div class="accordion-panel accordion-panel--foter">
-                        <ul class="nav-list nav-list--footer">
-                            <li class="nav-list__item"><a href="about-us.html"><h4>About Us</h4></a></li>
-                            <li class="nav-list__item"><a href="blog.html"><h4>Our blog</h4></a></li>
-                            <li class="nav-list__item"><a><h4>Contact Us</h4></a></li>
-                            <li class="nav-list__item"><a href="premises.html"><h4>Premises</h4></a></li>
-                            <li class="nav-list__item"><a href="projects.html"><h4>Project</h4></a></li>
-                            <li class="nav-list__item"><a href="product-warranty.html"><h4>Warranty & Warning</h4></a></li>
-                            <li class="nav-list__item"><a href="youtube-videos.html"><h4>Youtube videos</h4></a></li>
-                        </ul>
-                    </div>
-    
-                    <div class="accordion accordion--line-footer">
-                        <p class="accordion__title accordion__title--footer">service</p>
-                    </div>               
-                    <div class="accordion-panel accordion-panel--foter">
-                        <ul class="nav-list nav-list--footer">
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>About Us</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Our blog</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Contact Us</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Premises</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Project</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Warranty & Warning</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Youtube videos</h4></a></li>
-                        </ul>
-                    </div>
-    
-                    <div class="accordion accordion--line-footer">
-                        <p class="accordion__title accordion__title--footer">information</p>
-                    </div>               
-                    <div class="accordion-panel accordion-panel--foter">
-                        <ul class="nav-list nav-list--footer">
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>About Us</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Our blog</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Contact Us</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Premises</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Project</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Warranty & Warning</h4></a></li>
-                            <li class="nav-list__item nav-list__item--footer"><a><h4>Youtube videos</h4></a></li>
-                        </ul>                    
-                    </div>
-    
-                    <div class="accordion accordion--line-footer">
-                        <p class="accordion__title accordion__title--footer">contact</p>
-                    </div>               
-                    <div class="accordion-panel accordion-panel--foter">
-                        <ul class="nav-list nav-list--footer">
+                    <div class="accordion-list__wrapper accordion-list__wrapper--footer">
+                        <div class="accordion accordion--line-footer">
+                            <p class="accordion__title accordion__title--footer">about us</p>
+                        </div> 
+                        <div class="accordion-panel accordion-panel--foter">
                             <ul class="nav-list nav-list--footer">
-                                <li class="nav-list__item nav-list__item--footer"><a><h4>About Us</h4></a></li>
-                                <li class="nav-list__item nav-list__item--footer"><a><h4>Our blog</h4></a></li>
-                                <li class="nav-list__item nav-list__item--footer"><a><h4>Contact Us</h4></a></li>
-                                <li class="nav-list__item nav-list__item--footer"><a><h4>Premises</h4></a></li>
-                                <li class="nav-list__item nav-list__item--footer"><a><h4>Project</h4></a></li>
-                                <li class="nav-list__item nav-list__item--footer"><a><h4>Warranty & Warning</h4></a></li>
-                                <li class="nav-list__item nav-list__item--footer"><a><h4>Youtube videos</h4></a></li>
+                                <li class="nav-list__item"><a href="about-us.html"><h4>About Us</h4></a></li>
+                                <li class="nav-list__item"><a href="blog.html"><h4>Our blog</h4></a></li>
+                                <li class="nav-list__item"><a><h4>Contact Us</h4></a></li>
+                                <li class="nav-list__item"><a href="premises.html"><h4>Premises</h4></a></li>
+                                <li class="nav-list__item"><a href="projects.html"><h4>Project</h4></a></li>
+                                <li class="nav-list__item"><a href="product-warranty.html"><h4>Warranty & Warning</h4></a></li>
+                                <li class="nav-list__item"><a href="youtube-videos.html"><h4>Youtube videos</h4></a></li>
                             </ul>
-                        </ul>
+                        </div>
                     </div>
+                                                   
+                    <div class="accordion-list__wrapper accordion-list__wrapper--footer">
+                        <div class="accordion accordion--line-footer">
+                            <p class="accordion__title accordion__title--footer">service</p>
+                        </div>               
+                        <div class="accordion-panel accordion-panel--foter">
+                            <ul class="nav-list nav-list--footer">
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>My Account</h4></a></li>
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Track Order</h4></a></li>
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Resolution Centre</h4></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-list__wrapper accordion-list__wrapper--footer">
+                        <div class="accordion accordion--line-footer">
+                            <p class="accordion__title accordion__title--footer">information</p>
+                        </div>               
+                        <div class="accordion-panel accordion-panel--foter">
+                            <ul class="nav-list nav-list--footer">
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Terms of Use</h4></a></li>
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Privacy Policy</h4></a></li>
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Returns Policy</h4></a></li>
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Security Policy</h4></a></li>
+                                <li class="nav-list__item nav-list__item--footer"><a><h4>Product Warranty & Warning</h4></a></li>
+                            </ul>                    
+                        </div>
+                    </div>
+                        
+                    <div class="accordion-list__wrapper accordion-list__wrapper--footer">
+                        <div class="accordion accordion--line-footer">
+                            <p class="accordion__title accordion__title--footer">contact</p>
+                        </div>               
+                        <div class="accordion-panel accordion-panel--foter">
+                                <ul class="nav-list nav-list--footer">
+                                    <li class="nav-list__item nav-list__item--footer nav-list__item--footer-contact-phone"><a><h4>1300 887 880</h4></a></li>
+                                    <li class="nav-list__item nav-list__item--footer nav-list__item--footer-contact-mail"><a><h4>sales@processsystems.com.au</h4></a></li>
+                                    <li class="nav-list__item nav-list__item--footer nav-list__item--footer-contact-map"><a><h4>4/308 New Cleveland Road, TINGALPA, QLD, 4173</h4></a></li>
+                                </ul>
+                        </div>
+                    </div>                   
                 </div>
                 <div class="footer-body__btn">
                     <a href="#main">
@@ -524,17 +607,16 @@
                         </div>
                     </a>
                 </div>
-               
             </div>
-            <div class="footer-bottom">
-                <p class="footer-bottom__title">Copyright © 2022 Process Systems</p>
-                <div class="footer-bottom__icon">
-                    <img src="./src/assets/images/visa.svg" alt="visa">
-                    <img src="./src/assets/images/mastercard.svg" alt="mastercard">
-                    <img src="./src/assets/images/paypal.svg" alt="paypal">
-                </div>
+        </footer> 
+        <div class="footer-bottom">
+            <p class="footer-bottom__title">Copyright © 2022 Process Systems</p>
+            <div class="footer-bottom__icon">
+                <img src="./src/assets/images/visa.svg" alt="visa">
+                <img src="./src/assets/images/mastercard.svg" alt="mastercard">
+                <img src="./src/assets/images/paypal.svg" alt="paypal">
             </div>
-        </footer>   
+        </div>   
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="dist/js/app.js"></script>

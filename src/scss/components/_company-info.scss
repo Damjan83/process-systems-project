@@ -1,6 +1,10 @@
 .company-info {
     text-align: center;
     margin-top: 64px;
+
+    @include for-size(desktop-extra-large) {
+        margin-bottom: 109px;
+    }
 }
 
 .company-info__title {

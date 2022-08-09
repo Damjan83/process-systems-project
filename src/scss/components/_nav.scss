@@ -132,6 +132,17 @@
     border-bottom: 1px solid map-get($color , c-acc-line);
     padding: 43px 20px 41px 20px;
     margin: 0 -20px;
+    position: unset;
+
+    @include for-size(phone-large) {
+        border-bottom: none;
+    }
+
+    @include for-size(tablet) {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
 }
 
 .footer-bottom {

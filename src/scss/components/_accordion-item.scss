@@ -123,6 +123,7 @@
 
     @include for-size(tablet) {
         display: flex;
+        padding-right: 172px;
     }
 }
 
@@ -276,7 +277,7 @@
     }
 
     @include for-size(desktop-extra-large) {
-        width: 30.62%;
+        width: 30.50%;
         display: flex;
         flex-wrap: wrap;
 

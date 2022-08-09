@@ -5,6 +5,10 @@
     max-width: 1920px;
     margin: 0 auto;
 
+    &--about-us {
+        padding: 0;
+    }
+
     @include for-size(desktop-extra-large) {
         padding: 0 160px;
     }

@@ -4,6 +4,7 @@ footer {
     @include for-size(desktop-large) {
         display: flex;
         justify-content: space-between;
+        border-bottom: 1px solid map-get($color , c-acc-line);
     }
 }
 
@@ -50,6 +51,10 @@ footer {
 .footer__guide {
     border-bottom: 1px solid map-get($color , c-acc-line);
     padding-bottom: 47px;
+
+    @include for-size(desktop-large) {
+        border-bottom: 0;
+    }
 }
 
 .footer__guide__book {

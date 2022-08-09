@@ -30,11 +30,15 @@
 
     @include for-size(desktop-large) {
         width: 100%;
-        padding: 0 160px;
+        padding: 0 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin: 0;
+    }
+
+    @include for-size(desktop-extra-large) {
+        padding: 0 160px;
     }
     
 }
